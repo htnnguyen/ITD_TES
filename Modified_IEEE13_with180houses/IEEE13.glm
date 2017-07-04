@@ -26,7 +26,7 @@ module connection;
 
 module powerflow{
      
-	solver_method FBS;
+	solver_method NR;
 	default_maximum_voltage_error 1e-3;
 	line_limits FALSE;
        };
@@ -361,7 +361,7 @@ object overhead_line {
 	name line_meter_645;
 	from n645;
 	to meter_645;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -370,7 +370,7 @@ object overhead_line {
 	name line_meter_646;
 	from n646;
 	to meter_646;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -379,7 +379,7 @@ object overhead_line {
 	name line_meter_611;
 	from n611;
 	to meter_611;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -388,7 +388,7 @@ object overhead_line {
 	name line_meter_652;
 	from n652;
 	to meter_652;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -397,7 +397,7 @@ object overhead_line {
 	name line_meter_692;
 	from n692;
 	to meter_692;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -406,7 +406,7 @@ object overhead_line {
 	name line_meter_675;
 	from n675;
 	to meter_675;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -415,7 +415,7 @@ object overhead_line {
 	name line_meter_634;
 	from n634;
 	to meter_634;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -424,7 +424,7 @@ object overhead_line {
 	name line_meter_632;
 	from n632;
 	to meter_632;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -433,7 +433,7 @@ object overhead_line {
 	name line_meter_650;
 	from network_node;
 	to meter_650;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -442,7 +442,7 @@ object overhead_line {
 	name line_meter_671;
 	from n671;
 	to meter_671;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -451,7 +451,7 @@ object overhead_line {
 	name line_meter_680;
 	from n680;
 	to meter_680;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -460,7 +460,7 @@ object overhead_line {
 	name line_meter_633;
 	from n633;
 	to meter_633;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -471,7 +471,7 @@ object overhead_line {
 	name line_meter_684;
 	from n684;
 	to meter_684;
-	length 0;
+	length 5;
 	configuration line_configuration:602;
 }
 
@@ -507,6 +507,7 @@ object substation {
 	name network_node;
 	phases "ABCN";
 	bustype SWING;
+	base_power 5.0e6;
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
 	voltage_C -1200.8886+2080.000j;
@@ -968,12 +969,12 @@ object capacitor {
 	pt_phase ABCN;
 	parent n675;
 	phases_connected ABCN;
-	control VOLT;
 	voltage_set_high 2500.0;
 	voltage_set_low 1950.0;
 	capacitor_A 0.200 MVAr;
 	capacitor_B 0.200 MVAr;
 	capacitor_C 0.200 MVAr;
+	control MANUAL;
 	control_level INDIVIDUAL;
 	time_delay 0.0;	
 	dwell_time 0.0;
@@ -989,10 +990,10 @@ object capacitor {
 	pt_phase CN;
 	parent n611;
 	phases_connected CN;
-	control VOLT;
 	voltage_set_high 2600.0;
 	voltage_set_low 2050.0;
 	capacitor_C 0.100 MVAr;
+	control MANUAL;
 	control_level INDIVIDUAL;
 	time_delay 0.0;	
 	dwell_time 0.0;			// manual controls for load manipulation (don't use the switch player
@@ -1042,7 +1043,7 @@ name trip_line1;
 phases CS;
 from trip_node1;
 to trip_meter1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1055,7 +1056,7 @@ name meter_house1_1;
 phases CS;
 from trip_meter1;
 to trip_node1_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1069,7 +1070,7 @@ name trip_line1_1;
 phases CS;
 from trip_node1_1;
 to trip_meter1_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1082,7 +1083,7 @@ name meter_house1_2;
 phases CS;
 from trip_meter1;
 to trip_node1_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1096,7 +1097,7 @@ name trip_line1_2;
 phases CS;
 from trip_node1_2;
 to trip_meter1_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1109,7 +1110,7 @@ name meter_house1_3;
 phases CS;
 from trip_meter1;
 to trip_node1_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1123,7 +1124,7 @@ name trip_line1_3;
 phases CS;
 from trip_node1_3;
 to trip_meter1_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1136,7 +1137,7 @@ name meter_house1_4;
 phases CS;
 from trip_meter1;
 to trip_node1_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1150,7 +1151,7 @@ name trip_line1_4;
 phases CS;
 from trip_node1_4;
 to trip_meter1_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1163,7 +1164,7 @@ name meter_house1_5;
 phases CS;
 from trip_meter1;
 to trip_node1_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1177,7 +1178,7 @@ name trip_line1_5;
 phases CS;
 from trip_node1_5;
 to trip_meter1_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1190,7 +1191,7 @@ name meter_house1_6;
 phases CS;
 from trip_meter1;
 to trip_node1_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1204,7 +1205,7 @@ name trip_line1_6;
 phases CS;
 from trip_node1_6;
 to trip_meter1_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1217,7 +1218,7 @@ name meter_house1_7;
 phases CS;
 from trip_meter1;
 to trip_node1_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1231,7 +1232,7 @@ name trip_line1_7;
 phases CS;
 from trip_node1_7;
 to trip_meter1_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1244,7 +1245,7 @@ name meter_house1_8;
 phases CS;
 from trip_meter1;
 to trip_node1_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1258,7 +1259,7 @@ name trip_line1_8;
 phases CS;
 from trip_node1_8;
 to trip_meter1_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1271,7 +1272,7 @@ name meter_house1_9;
 phases CS;
 from trip_meter1;
 to trip_node1_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1285,7 +1286,7 @@ name trip_line1_9;
 phases CS;
 from trip_node1_9;
 to trip_meter1_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1298,7 +1299,7 @@ name meter_house1_10;
 phases CS;
 from trip_meter1;
 to trip_node1_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1312,7 +1313,7 @@ name trip_line1_10;
 phases CS;
 from trip_node1_10;
 to trip_meter1_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1325,7 +1326,7 @@ name meter_house1_11;
 phases CS;
 from trip_meter1;
 to trip_node1_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1339,7 +1340,7 @@ name trip_line1_11;
 phases CS;
 from trip_node1_11;
 to trip_meter1_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1352,7 +1353,7 @@ name meter_house1_12;
 phases CS;
 from trip_meter1;
 to trip_node1_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1366,7 +1367,7 @@ name trip_line1_12;
 phases CS;
 from trip_node1_12;
 to trip_meter1_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1379,7 +1380,7 @@ name trip_line2;
 phases AS;
 from trip_node2;
 to trip_meter2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1392,7 +1393,7 @@ name meter_house2_1;
 phases AS;
 from trip_meter2;
 to trip_node2_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1406,7 +1407,7 @@ name trip_line2_1;
 phases AS;
 from trip_node2_1;
 to trip_meter2_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1419,7 +1420,7 @@ name meter_house2_2;
 phases AS;
 from trip_meter2;
 to trip_node2_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1433,7 +1434,7 @@ name trip_line2_2;
 phases AS;
 from trip_node2_2;
 to trip_meter2_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1446,7 +1447,7 @@ name meter_house2_3;
 phases AS;
 from trip_meter2;
 to trip_node2_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1460,7 +1461,7 @@ name trip_line2_3;
 phases AS;
 from trip_node2_3;
 to trip_meter2_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1473,7 +1474,7 @@ name meter_house2_4;
 phases AS;
 from trip_meter2;
 to trip_node2_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1487,7 +1488,7 @@ name trip_line2_4;
 phases AS;
 from trip_node2_4;
 to trip_meter2_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1500,7 +1501,7 @@ name meter_house2_5;
 phases AS;
 from trip_meter2;
 to trip_node2_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1514,7 +1515,7 @@ name trip_line2_5;
 phases AS;
 from trip_node2_5;
 to trip_meter2_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1527,7 +1528,7 @@ name meter_house2_6;
 phases AS;
 from trip_meter2;
 to trip_node2_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1541,7 +1542,7 @@ name trip_line2_6;
 phases AS;
 from trip_node2_6;
 to trip_meter2_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1554,7 +1555,7 @@ name meter_house2_7;
 phases AS;
 from trip_meter2;
 to trip_node2_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1568,7 +1569,7 @@ name trip_line2_7;
 phases AS;
 from trip_node2_7;
 to trip_meter2_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1581,7 +1582,7 @@ name meter_house2_8;
 phases AS;
 from trip_meter2;
 to trip_node2_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1595,7 +1596,7 @@ name trip_line2_8;
 phases AS;
 from trip_node2_8;
 to trip_meter2_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1608,7 +1609,7 @@ name meter_house2_9;
 phases AS;
 from trip_meter2;
 to trip_node2_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1622,7 +1623,7 @@ name trip_line2_9;
 phases AS;
 from trip_node2_9;
 to trip_meter2_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1635,7 +1636,7 @@ name meter_house2_10;
 phases AS;
 from trip_meter2;
 to trip_node2_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1649,7 +1650,7 @@ name trip_line2_10;
 phases AS;
 from trip_node2_10;
 to trip_meter2_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1662,7 +1663,7 @@ name meter_house2_11;
 phases AS;
 from trip_meter2;
 to trip_node2_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1676,7 +1677,7 @@ name trip_line2_11;
 phases AS;
 from trip_node2_11;
 to trip_meter2_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1689,7 +1690,7 @@ name meter_house2_12;
 phases AS;
 from trip_meter2;
 to trip_node2_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1703,7 +1704,7 @@ name trip_line2_12;
 phases AS;
 from trip_node2_12;
 to trip_meter2_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1716,7 +1717,7 @@ name trip_line3;
 phases BS;
 from trip_node3;
 to trip_meter3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1729,7 +1730,7 @@ name meter_house3_1;
 phases BS;
 from trip_meter3;
 to trip_node3_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1743,7 +1744,7 @@ name trip_line3_1;
 phases BS;
 from trip_node3_1;
 to trip_meter3_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1756,7 +1757,7 @@ name meter_house3_2;
 phases BS;
 from trip_meter3;
 to trip_node3_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1770,7 +1771,7 @@ name trip_line3_2;
 phases BS;
 from trip_node3_2;
 to trip_meter3_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1783,7 +1784,7 @@ name meter_house3_3;
 phases BS;
 from trip_meter3;
 to trip_node3_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1797,7 +1798,7 @@ name trip_line3_3;
 phases BS;
 from trip_node3_3;
 to trip_meter3_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1810,7 +1811,7 @@ name meter_house3_4;
 phases BS;
 from trip_meter3;
 to trip_node3_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1824,7 +1825,7 @@ name trip_line3_4;
 phases BS;
 from trip_node3_4;
 to trip_meter3_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1837,7 +1838,7 @@ name meter_house3_5;
 phases BS;
 from trip_meter3;
 to trip_node3_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1851,7 +1852,7 @@ name trip_line3_5;
 phases BS;
 from trip_node3_5;
 to trip_meter3_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1864,7 +1865,7 @@ name meter_house3_6;
 phases BS;
 from trip_meter3;
 to trip_node3_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1878,7 +1879,7 @@ name trip_line3_6;
 phases BS;
 from trip_node3_6;
 to trip_meter3_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1891,7 +1892,7 @@ name meter_house3_7;
 phases BS;
 from trip_meter3;
 to trip_node3_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1905,7 +1906,7 @@ name trip_line3_7;
 phases BS;
 from trip_node3_7;
 to trip_meter3_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1918,7 +1919,7 @@ name meter_house3_8;
 phases BS;
 from trip_meter3;
 to trip_node3_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1932,7 +1933,7 @@ name trip_line3_8;
 phases BS;
 from trip_node3_8;
 to trip_meter3_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1945,7 +1946,7 @@ name meter_house3_9;
 phases BS;
 from trip_meter3;
 to trip_node3_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1959,7 +1960,7 @@ name trip_line3_9;
 phases BS;
 from trip_node3_9;
 to trip_meter3_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1972,7 +1973,7 @@ name meter_house3_10;
 phases BS;
 from trip_meter3;
 to trip_node3_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1986,7 +1987,7 @@ name trip_line3_10;
 phases BS;
 from trip_node3_10;
 to trip_meter3_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -1999,7 +2000,7 @@ name meter_house3_11;
 phases BS;
 from trip_meter3;
 to trip_node3_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2013,7 +2014,7 @@ name trip_line3_11;
 phases BS;
 from trip_node3_11;
 to trip_meter3_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2026,7 +2027,7 @@ name meter_house3_12;
 phases BS;
 from trip_meter3;
 to trip_node3_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2040,7 +2041,7 @@ name trip_line3_12;
 phases BS;
 from trip_node3_12;
 to trip_meter3_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2053,7 +2054,7 @@ name trip_line4;
 phases CS;
 from trip_node4;
 to trip_meter4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2066,7 +2067,7 @@ name meter_house4_1;
 phases CS;
 from trip_meter4;
 to trip_node4_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2080,7 +2081,7 @@ name trip_line4_1;
 phases CS;
 from trip_node4_1;
 to trip_meter4_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2093,7 +2094,7 @@ name meter_house4_2;
 phases CS;
 from trip_meter4;
 to trip_node4_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2107,7 +2108,7 @@ name trip_line4_2;
 phases CS;
 from trip_node4_2;
 to trip_meter4_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2120,7 +2121,7 @@ name meter_house4_3;
 phases CS;
 from trip_meter4;
 to trip_node4_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2134,7 +2135,7 @@ name trip_line4_3;
 phases CS;
 from trip_node4_3;
 to trip_meter4_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2147,7 +2148,7 @@ name meter_house4_4;
 phases CS;
 from trip_meter4;
 to trip_node4_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2161,7 +2162,7 @@ name trip_line4_4;
 phases CS;
 from trip_node4_4;
 to trip_meter4_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2174,7 +2175,7 @@ name meter_house4_5;
 phases CS;
 from trip_meter4;
 to trip_node4_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2188,7 +2189,7 @@ name trip_line4_5;
 phases CS;
 from trip_node4_5;
 to trip_meter4_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2201,7 +2202,7 @@ name meter_house4_6;
 phases CS;
 from trip_meter4;
 to trip_node4_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2215,7 +2216,7 @@ name trip_line4_6;
 phases CS;
 from trip_node4_6;
 to trip_meter4_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2228,7 +2229,7 @@ name meter_house4_7;
 phases CS;
 from trip_meter4;
 to trip_node4_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2242,7 +2243,7 @@ name trip_line4_7;
 phases CS;
 from trip_node4_7;
 to trip_meter4_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2255,7 +2256,7 @@ name meter_house4_8;
 phases CS;
 from trip_meter4;
 to trip_node4_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2269,7 +2270,7 @@ name trip_line4_8;
 phases CS;
 from trip_node4_8;
 to trip_meter4_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2282,7 +2283,7 @@ name meter_house4_9;
 phases CS;
 from trip_meter4;
 to trip_node4_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2296,7 +2297,7 @@ name trip_line4_9;
 phases CS;
 from trip_node4_9;
 to trip_meter4_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2309,7 +2310,7 @@ name meter_house4_10;
 phases CS;
 from trip_meter4;
 to trip_node4_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2323,7 +2324,7 @@ name trip_line4_10;
 phases CS;
 from trip_node4_10;
 to trip_meter4_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2336,7 +2337,7 @@ name meter_house4_11;
 phases CS;
 from trip_meter4;
 to trip_node4_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2350,7 +2351,7 @@ name trip_line4_11;
 phases CS;
 from trip_node4_11;
 to trip_meter4_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2363,7 +2364,7 @@ name meter_house4_12;
 phases CS;
 from trip_meter4;
 to trip_node4_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2377,7 +2378,7 @@ name trip_line4_12;
 phases CS;
 from trip_node4_12;
 to trip_meter4_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2390,7 +2391,7 @@ name trip_line5;
 phases BS;
 from trip_node5;
 to trip_meter5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2403,7 +2404,7 @@ name meter_house5_1;
 phases BS;
 from trip_meter5;
 to trip_node5_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2417,7 +2418,7 @@ name trip_line5_1;
 phases BS;
 from trip_node5_1;
 to trip_meter5_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2430,7 +2431,7 @@ name meter_house5_2;
 phases BS;
 from trip_meter5;
 to trip_node5_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2444,7 +2445,7 @@ name trip_line5_2;
 phases BS;
 from trip_node5_2;
 to trip_meter5_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2457,7 +2458,7 @@ name meter_house5_3;
 phases BS;
 from trip_meter5;
 to trip_node5_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2471,7 +2472,7 @@ name trip_line5_3;
 phases BS;
 from trip_node5_3;
 to trip_meter5_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2484,7 +2485,7 @@ name meter_house5_4;
 phases BS;
 from trip_meter5;
 to trip_node5_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2498,7 +2499,7 @@ name trip_line5_4;
 phases BS;
 from trip_node5_4;
 to trip_meter5_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2511,7 +2512,7 @@ name meter_house5_5;
 phases BS;
 from trip_meter5;
 to trip_node5_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2525,7 +2526,7 @@ name trip_line5_5;
 phases BS;
 from trip_node5_5;
 to trip_meter5_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2538,7 +2539,7 @@ name meter_house5_6;
 phases BS;
 from trip_meter5;
 to trip_node5_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2552,7 +2553,7 @@ name trip_line5_6;
 phases BS;
 from trip_node5_6;
 to trip_meter5_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2565,7 +2566,7 @@ name meter_house5_7;
 phases BS;
 from trip_meter5;
 to trip_node5_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2579,7 +2580,7 @@ name trip_line5_7;
 phases BS;
 from trip_node5_7;
 to trip_meter5_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2592,7 +2593,7 @@ name meter_house5_8;
 phases BS;
 from trip_meter5;
 to trip_node5_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2606,7 +2607,7 @@ name trip_line5_8;
 phases BS;
 from trip_node5_8;
 to trip_meter5_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2619,7 +2620,7 @@ name meter_house5_9;
 phases BS;
 from trip_meter5;
 to trip_node5_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2633,7 +2634,7 @@ name trip_line5_9;
 phases BS;
 from trip_node5_9;
 to trip_meter5_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2646,7 +2647,7 @@ name meter_house5_10;
 phases BS;
 from trip_meter5;
 to trip_node5_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2660,7 +2661,7 @@ name trip_line5_10;
 phases BS;
 from trip_node5_10;
 to trip_meter5_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2673,7 +2674,7 @@ name meter_house5_11;
 phases BS;
 from trip_meter5;
 to trip_node5_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2687,7 +2688,7 @@ name trip_line5_11;
 phases BS;
 from trip_node5_11;
 to trip_meter5_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2700,7 +2701,7 @@ name meter_house5_12;
 phases BS;
 from trip_meter5;
 to trip_node5_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2714,7 +2715,7 @@ name trip_line5_12;
 phases BS;
 from trip_node5_12;
 to trip_meter5_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2727,7 +2728,7 @@ name trip_line6;
 phases CS;
 from trip_node6;
 to trip_meter6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2740,7 +2741,7 @@ name meter_house6_1;
 phases CS;
 from trip_meter6;
 to trip_node6_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2754,7 +2755,7 @@ name trip_line6_1;
 phases CS;
 from trip_node6_1;
 to trip_meter6_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2767,7 +2768,7 @@ name meter_house6_2;
 phases CS;
 from trip_meter6;
 to trip_node6_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2781,7 +2782,7 @@ name trip_line6_2;
 phases CS;
 from trip_node6_2;
 to trip_meter6_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2794,7 +2795,7 @@ name meter_house6_3;
 phases CS;
 from trip_meter6;
 to trip_node6_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2808,7 +2809,7 @@ name trip_line6_3;
 phases CS;
 from trip_node6_3;
 to trip_meter6_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2821,7 +2822,7 @@ name meter_house6_4;
 phases CS;
 from trip_meter6;
 to trip_node6_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2835,7 +2836,7 @@ name trip_line6_4;
 phases CS;
 from trip_node6_4;
 to trip_meter6_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2848,7 +2849,7 @@ name meter_house6_5;
 phases CS;
 from trip_meter6;
 to trip_node6_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2862,7 +2863,7 @@ name trip_line6_5;
 phases CS;
 from trip_node6_5;
 to trip_meter6_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2875,7 +2876,7 @@ name meter_house6_6;
 phases CS;
 from trip_meter6;
 to trip_node6_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2889,7 +2890,7 @@ name trip_line6_6;
 phases CS;
 from trip_node6_6;
 to trip_meter6_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2902,7 +2903,7 @@ name meter_house6_7;
 phases CS;
 from trip_meter6;
 to trip_node6_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2916,7 +2917,7 @@ name trip_line6_7;
 phases CS;
 from trip_node6_7;
 to trip_meter6_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2929,7 +2930,7 @@ name meter_house6_8;
 phases CS;
 from trip_meter6;
 to trip_node6_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2943,7 +2944,7 @@ name trip_line6_8;
 phases CS;
 from trip_node6_8;
 to trip_meter6_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2956,7 +2957,7 @@ name meter_house6_9;
 phases CS;
 from trip_meter6;
 to trip_node6_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2970,7 +2971,7 @@ name trip_line6_9;
 phases CS;
 from trip_node6_9;
 to trip_meter6_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2983,7 +2984,7 @@ name meter_house6_10;
 phases CS;
 from trip_meter6;
 to trip_node6_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -2997,7 +2998,7 @@ name trip_line6_10;
 phases CS;
 from trip_node6_10;
 to trip_meter6_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3010,7 +3011,7 @@ name meter_house6_11;
 phases CS;
 from trip_meter6;
 to trip_node6_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3024,7 +3025,7 @@ name trip_line6_11;
 phases CS;
 from trip_node6_11;
 to trip_meter6_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3037,7 +3038,7 @@ name meter_house6_12;
 phases CS;
 from trip_meter6;
 to trip_node6_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3051,7 +3052,7 @@ name trip_line6_12;
 phases CS;
 from trip_node6_12;
 to trip_meter6_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3064,7 +3065,7 @@ name trip_line7;
 phases BS;
 from trip_node7;
 to trip_meter7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3077,7 +3078,7 @@ name meter_house7_1;
 phases BS;
 from trip_meter7;
 to trip_node7_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3091,7 +3092,7 @@ name trip_line7_1;
 phases BS;
 from trip_node7_1;
 to trip_meter7_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3104,7 +3105,7 @@ name meter_house7_2;
 phases BS;
 from trip_meter7;
 to trip_node7_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3118,7 +3119,7 @@ name trip_line7_2;
 phases BS;
 from trip_node7_2;
 to trip_meter7_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3131,7 +3132,7 @@ name meter_house7_3;
 phases BS;
 from trip_meter7;
 to trip_node7_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3145,7 +3146,7 @@ name trip_line7_3;
 phases BS;
 from trip_node7_3;
 to trip_meter7_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3158,7 +3159,7 @@ name meter_house7_4;
 phases BS;
 from trip_meter7;
 to trip_node7_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3172,7 +3173,7 @@ name trip_line7_4;
 phases BS;
 from trip_node7_4;
 to trip_meter7_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3185,7 +3186,7 @@ name meter_house7_5;
 phases BS;
 from trip_meter7;
 to trip_node7_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3199,7 +3200,7 @@ name trip_line7_5;
 phases BS;
 from trip_node7_5;
 to trip_meter7_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3212,7 +3213,7 @@ name meter_house7_6;
 phases BS;
 from trip_meter7;
 to trip_node7_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3226,7 +3227,7 @@ name trip_line7_6;
 phases BS;
 from trip_node7_6;
 to trip_meter7_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3239,7 +3240,7 @@ name meter_house7_7;
 phases BS;
 from trip_meter7;
 to trip_node7_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3253,7 +3254,7 @@ name trip_line7_7;
 phases BS;
 from trip_node7_7;
 to trip_meter7_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3266,7 +3267,7 @@ name meter_house7_8;
 phases BS;
 from trip_meter7;
 to trip_node7_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3280,7 +3281,7 @@ name trip_line7_8;
 phases BS;
 from trip_node7_8;
 to trip_meter7_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3293,7 +3294,7 @@ name meter_house7_9;
 phases BS;
 from trip_meter7;
 to trip_node7_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3307,7 +3308,7 @@ name trip_line7_9;
 phases BS;
 from trip_node7_9;
 to trip_meter7_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3320,7 +3321,7 @@ name meter_house7_10;
 phases BS;
 from trip_meter7;
 to trip_node7_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3334,7 +3335,7 @@ name trip_line7_10;
 phases BS;
 from trip_node7_10;
 to trip_meter7_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3347,7 +3348,7 @@ name meter_house7_11;
 phases BS;
 from trip_meter7;
 to trip_node7_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3361,7 +3362,7 @@ name trip_line7_11;
 phases BS;
 from trip_node7_11;
 to trip_meter7_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3374,7 +3375,7 @@ name meter_house7_12;
 phases BS;
 from trip_meter7;
 to trip_node7_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3388,7 +3389,7 @@ name trip_line7_12;
 phases BS;
 from trip_node7_12;
 to trip_meter7_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3401,7 +3402,7 @@ name trip_line8;
 phases CS;
 from trip_node8;
 to trip_meter8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3414,7 +3415,7 @@ name meter_house8_1;
 phases CS;
 from trip_meter8;
 to trip_node8_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3428,7 +3429,7 @@ name trip_line8_1;
 phases CS;
 from trip_node8_1;
 to trip_meter8_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3441,7 +3442,7 @@ name meter_house8_2;
 phases CS;
 from trip_meter8;
 to trip_node8_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3455,7 +3456,7 @@ name trip_line8_2;
 phases CS;
 from trip_node8_2;
 to trip_meter8_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3468,7 +3469,7 @@ name meter_house8_3;
 phases CS;
 from trip_meter8;
 to trip_node8_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3482,7 +3483,7 @@ name trip_line8_3;
 phases CS;
 from trip_node8_3;
 to trip_meter8_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3495,7 +3496,7 @@ name meter_house8_4;
 phases CS;
 from trip_meter8;
 to trip_node8_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3509,7 +3510,7 @@ name trip_line8_4;
 phases CS;
 from trip_node8_4;
 to trip_meter8_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3522,7 +3523,7 @@ name meter_house8_5;
 phases CS;
 from trip_meter8;
 to trip_node8_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3536,7 +3537,7 @@ name trip_line8_5;
 phases CS;
 from trip_node8_5;
 to trip_meter8_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3549,7 +3550,7 @@ name meter_house8_6;
 phases CS;
 from trip_meter8;
 to trip_node8_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3563,7 +3564,7 @@ name trip_line8_6;
 phases CS;
 from trip_node8_6;
 to trip_meter8_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3576,7 +3577,7 @@ name meter_house8_7;
 phases CS;
 from trip_meter8;
 to trip_node8_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3590,7 +3591,7 @@ name trip_line8_7;
 phases CS;
 from trip_node8_7;
 to trip_meter8_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3603,7 +3604,7 @@ name meter_house8_8;
 phases CS;
 from trip_meter8;
 to trip_node8_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3617,7 +3618,7 @@ name trip_line8_8;
 phases CS;
 from trip_node8_8;
 to trip_meter8_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3630,7 +3631,7 @@ name meter_house8_9;
 phases CS;
 from trip_meter8;
 to trip_node8_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3644,7 +3645,7 @@ name trip_line8_9;
 phases CS;
 from trip_node8_9;
 to trip_meter8_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3657,7 +3658,7 @@ name meter_house8_10;
 phases CS;
 from trip_meter8;
 to trip_node8_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3671,7 +3672,7 @@ name trip_line8_10;
 phases CS;
 from trip_node8_10;
 to trip_meter8_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3684,7 +3685,7 @@ name meter_house8_11;
 phases CS;
 from trip_meter8;
 to trip_node8_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3698,7 +3699,7 @@ name trip_line8_11;
 phases CS;
 from trip_node8_11;
 to trip_meter8_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3711,7 +3712,7 @@ name meter_house8_12;
 phases CS;
 from trip_meter8;
 to trip_node8_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3725,7 +3726,7 @@ name trip_line8_12;
 phases CS;
 from trip_node8_12;
 to trip_meter8_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3738,7 +3739,7 @@ name trip_line9;
 phases AS;
 from trip_node9;
 to trip_meter9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3751,7 +3752,7 @@ name meter_house9_1;
 phases AS;
 from trip_meter9;
 to trip_node9_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3765,7 +3766,7 @@ name trip_line9_1;
 phases AS;
 from trip_node9_1;
 to trip_meter9_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3778,7 +3779,7 @@ name meter_house9_2;
 phases AS;
 from trip_meter9;
 to trip_node9_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3792,7 +3793,7 @@ name trip_line9_2;
 phases AS;
 from trip_node9_2;
 to trip_meter9_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3805,7 +3806,7 @@ name meter_house9_3;
 phases AS;
 from trip_meter9;
 to trip_node9_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3819,7 +3820,7 @@ name trip_line9_3;
 phases AS;
 from trip_node9_3;
 to trip_meter9_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3832,7 +3833,7 @@ name meter_house9_4;
 phases AS;
 from trip_meter9;
 to trip_node9_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3846,7 +3847,7 @@ name trip_line9_4;
 phases AS;
 from trip_node9_4;
 to trip_meter9_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3859,7 +3860,7 @@ name meter_house9_5;
 phases AS;
 from trip_meter9;
 to trip_node9_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3873,7 +3874,7 @@ name trip_line9_5;
 phases AS;
 from trip_node9_5;
 to trip_meter9_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3886,7 +3887,7 @@ name meter_house9_6;
 phases AS;
 from trip_meter9;
 to trip_node9_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3900,7 +3901,7 @@ name trip_line9_6;
 phases AS;
 from trip_node9_6;
 to trip_meter9_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3913,7 +3914,7 @@ name meter_house9_7;
 phases AS;
 from trip_meter9;
 to trip_node9_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3927,7 +3928,7 @@ name trip_line9_7;
 phases AS;
 from trip_node9_7;
 to trip_meter9_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3940,7 +3941,7 @@ name meter_house9_8;
 phases AS;
 from trip_meter9;
 to trip_node9_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3954,7 +3955,7 @@ name trip_line9_8;
 phases AS;
 from trip_node9_8;
 to trip_meter9_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3967,7 +3968,7 @@ name meter_house9_9;
 phases AS;
 from trip_meter9;
 to trip_node9_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3981,7 +3982,7 @@ name trip_line9_9;
 phases AS;
 from trip_node9_9;
 to trip_meter9_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -3994,7 +3995,7 @@ name meter_house9_10;
 phases AS;
 from trip_meter9;
 to trip_node9_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4008,7 +4009,7 @@ name trip_line9_10;
 phases AS;
 from trip_node9_10;
 to trip_meter9_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4021,7 +4022,7 @@ name meter_house9_11;
 phases AS;
 from trip_meter9;
 to trip_node9_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4035,7 +4036,7 @@ name trip_line9_11;
 phases AS;
 from trip_node9_11;
 to trip_meter9_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4048,7 +4049,7 @@ name meter_house9_12;
 phases AS;
 from trip_meter9;
 to trip_node9_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4062,7 +4063,7 @@ name trip_line9_12;
 phases AS;
 from trip_node9_12;
 to trip_meter9_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4075,7 +4076,7 @@ name trip_line10;
 phases AS;
 from trip_node10;
 to trip_meter10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4088,7 +4089,7 @@ name meter_house10_1;
 phases AS;
 from trip_meter10;
 to trip_node10_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4102,7 +4103,7 @@ name trip_line10_1;
 phases AS;
 from trip_node10_1;
 to trip_meter10_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4115,7 +4116,7 @@ name meter_house10_2;
 phases AS;
 from trip_meter10;
 to trip_node10_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4129,7 +4130,7 @@ name trip_line10_2;
 phases AS;
 from trip_node10_2;
 to trip_meter10_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4142,7 +4143,7 @@ name meter_house10_3;
 phases AS;
 from trip_meter10;
 to trip_node10_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4156,7 +4157,7 @@ name trip_line10_3;
 phases AS;
 from trip_node10_3;
 to trip_meter10_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4169,7 +4170,7 @@ name meter_house10_4;
 phases AS;
 from trip_meter10;
 to trip_node10_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4183,7 +4184,7 @@ name trip_line10_4;
 phases AS;
 from trip_node10_4;
 to trip_meter10_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4196,7 +4197,7 @@ name meter_house10_5;
 phases AS;
 from trip_meter10;
 to trip_node10_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4210,7 +4211,7 @@ name trip_line10_5;
 phases AS;
 from trip_node10_5;
 to trip_meter10_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4223,7 +4224,7 @@ name meter_house10_6;
 phases AS;
 from trip_meter10;
 to trip_node10_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4237,7 +4238,7 @@ name trip_line10_6;
 phases AS;
 from trip_node10_6;
 to trip_meter10_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4250,7 +4251,7 @@ name meter_house10_7;
 phases AS;
 from trip_meter10;
 to trip_node10_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4264,7 +4265,7 @@ name trip_line10_7;
 phases AS;
 from trip_node10_7;
 to trip_meter10_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4277,7 +4278,7 @@ name meter_house10_8;
 phases AS;
 from trip_meter10;
 to trip_node10_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4291,7 +4292,7 @@ name trip_line10_8;
 phases AS;
 from trip_node10_8;
 to trip_meter10_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4304,7 +4305,7 @@ name meter_house10_9;
 phases AS;
 from trip_meter10;
 to trip_node10_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4318,7 +4319,7 @@ name trip_line10_9;
 phases AS;
 from trip_node10_9;
 to trip_meter10_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4331,7 +4332,7 @@ name meter_house10_10;
 phases AS;
 from trip_meter10;
 to trip_node10_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4345,7 +4346,7 @@ name trip_line10_10;
 phases AS;
 from trip_node10_10;
 to trip_meter10_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4358,7 +4359,7 @@ name meter_house10_11;
 phases AS;
 from trip_meter10;
 to trip_node10_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4372,7 +4373,7 @@ name trip_line10_11;
 phases AS;
 from trip_node10_11;
 to trip_meter10_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4385,7 +4386,7 @@ name meter_house10_12;
 phases AS;
 from trip_meter10;
 to trip_node10_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4399,7 +4400,7 @@ name trip_line10_12;
 phases AS;
 from trip_node10_12;
 to trip_meter10_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4412,7 +4413,7 @@ name trip_line11;
 phases BS;
 from trip_node11;
 to trip_meter11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4425,7 +4426,7 @@ name meter_house11_1;
 phases BS;
 from trip_meter11;
 to trip_node11_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4439,7 +4440,7 @@ name trip_line11_1;
 phases BS;
 from trip_node11_1;
 to trip_meter11_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4452,7 +4453,7 @@ name meter_house11_2;
 phases BS;
 from trip_meter11;
 to trip_node11_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4466,7 +4467,7 @@ name trip_line11_2;
 phases BS;
 from trip_node11_2;
 to trip_meter11_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4479,7 +4480,7 @@ name meter_house11_3;
 phases BS;
 from trip_meter11;
 to trip_node11_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4493,7 +4494,7 @@ name trip_line11_3;
 phases BS;
 from trip_node11_3;
 to trip_meter11_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4506,7 +4507,7 @@ name meter_house11_4;
 phases BS;
 from trip_meter11;
 to trip_node11_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4520,7 +4521,7 @@ name trip_line11_4;
 phases BS;
 from trip_node11_4;
 to trip_meter11_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4533,7 +4534,7 @@ name meter_house11_5;
 phases BS;
 from trip_meter11;
 to trip_node11_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4547,7 +4548,7 @@ name trip_line11_5;
 phases BS;
 from trip_node11_5;
 to trip_meter11_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4560,7 +4561,7 @@ name meter_house11_6;
 phases BS;
 from trip_meter11;
 to trip_node11_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4574,7 +4575,7 @@ name trip_line11_6;
 phases BS;
 from trip_node11_6;
 to trip_meter11_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4587,7 +4588,7 @@ name meter_house11_7;
 phases BS;
 from trip_meter11;
 to trip_node11_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4601,7 +4602,7 @@ name trip_line11_7;
 phases BS;
 from trip_node11_7;
 to trip_meter11_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4614,7 +4615,7 @@ name meter_house11_8;
 phases BS;
 from trip_meter11;
 to trip_node11_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4628,7 +4629,7 @@ name trip_line11_8;
 phases BS;
 from trip_node11_8;
 to trip_meter11_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4641,7 +4642,7 @@ name meter_house11_9;
 phases BS;
 from trip_meter11;
 to trip_node11_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4655,7 +4656,7 @@ name trip_line11_9;
 phases BS;
 from trip_node11_9;
 to trip_meter11_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4668,7 +4669,7 @@ name meter_house11_10;
 phases BS;
 from trip_meter11;
 to trip_node11_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4682,7 +4683,7 @@ name trip_line11_10;
 phases BS;
 from trip_node11_10;
 to trip_meter11_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4695,7 +4696,7 @@ name meter_house11_11;
 phases BS;
 from trip_meter11;
 to trip_node11_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4709,7 +4710,7 @@ name trip_line11_11;
 phases BS;
 from trip_node11_11;
 to trip_meter11_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4722,7 +4723,7 @@ name meter_house11_12;
 phases BS;
 from trip_meter11;
 to trip_node11_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4736,7 +4737,7 @@ name trip_line11_12;
 phases BS;
 from trip_node11_12;
 to trip_meter11_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4749,7 +4750,7 @@ name trip_line12;
 phases CS;
 from trip_node12;
 to trip_meter12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4762,7 +4763,7 @@ name meter_house12_1;
 phases CS;
 from trip_meter12;
 to trip_node12_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4776,7 +4777,7 @@ name trip_line12_1;
 phases CS;
 from trip_node12_1;
 to trip_meter12_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4789,7 +4790,7 @@ name meter_house12_2;
 phases CS;
 from trip_meter12;
 to trip_node12_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4803,7 +4804,7 @@ name trip_line12_2;
 phases CS;
 from trip_node12_2;
 to trip_meter12_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4816,7 +4817,7 @@ name meter_house12_3;
 phases CS;
 from trip_meter12;
 to trip_node12_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4830,7 +4831,7 @@ name trip_line12_3;
 phases CS;
 from trip_node12_3;
 to trip_meter12_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4843,7 +4844,7 @@ name meter_house12_4;
 phases CS;
 from trip_meter12;
 to trip_node12_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4857,7 +4858,7 @@ name trip_line12_4;
 phases CS;
 from trip_node12_4;
 to trip_meter12_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4870,7 +4871,7 @@ name meter_house12_5;
 phases CS;
 from trip_meter12;
 to trip_node12_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4884,7 +4885,7 @@ name trip_line12_5;
 phases CS;
 from trip_node12_5;
 to trip_meter12_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4897,7 +4898,7 @@ name meter_house12_6;
 phases CS;
 from trip_meter12;
 to trip_node12_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4911,7 +4912,7 @@ name trip_line12_6;
 phases CS;
 from trip_node12_6;
 to trip_meter12_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4924,7 +4925,7 @@ name meter_house12_7;
 phases CS;
 from trip_meter12;
 to trip_node12_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4938,7 +4939,7 @@ name trip_line12_7;
 phases CS;
 from trip_node12_7;
 to trip_meter12_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4951,7 +4952,7 @@ name meter_house12_8;
 phases CS;
 from trip_meter12;
 to trip_node12_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4965,7 +4966,7 @@ name trip_line12_8;
 phases CS;
 from trip_node12_8;
 to trip_meter12_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4978,7 +4979,7 @@ name meter_house12_9;
 phases CS;
 from trip_meter12;
 to trip_node12_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -4992,7 +4993,7 @@ name trip_line12_9;
 phases CS;
 from trip_node12_9;
 to trip_meter12_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5005,7 +5006,7 @@ name meter_house12_10;
 phases CS;
 from trip_meter12;
 to trip_node12_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5019,7 +5020,7 @@ name trip_line12_10;
 phases CS;
 from trip_node12_10;
 to trip_meter12_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5032,7 +5033,7 @@ name meter_house12_11;
 phases CS;
 from trip_meter12;
 to trip_node12_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5046,7 +5047,7 @@ name trip_line12_11;
 phases CS;
 from trip_node12_11;
 to trip_meter12_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5059,7 +5060,7 @@ name meter_house12_12;
 phases CS;
 from trip_meter12;
 to trip_node12_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5073,7 +5074,7 @@ name trip_line12_12;
 phases CS;
 from trip_node12_12;
 to trip_meter12_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5086,7 +5087,7 @@ name trip_line13;
 phases AS;
 from trip_node13;
 to trip_meter13;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5099,7 +5100,7 @@ name meter_house13_1;
 phases AS;
 from trip_meter13;
 to trip_node13_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5113,7 +5114,7 @@ name trip_line13_1;
 phases AS;
 from trip_node13_1;
 to trip_meter13_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5126,7 +5127,7 @@ name meter_house13_2;
 phases AS;
 from trip_meter13;
 to trip_node13_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5140,7 +5141,7 @@ name trip_line13_2;
 phases AS;
 from trip_node13_2;
 to trip_meter13_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5153,7 +5154,7 @@ name meter_house13_3;
 phases AS;
 from trip_meter13;
 to trip_node13_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5167,7 +5168,7 @@ name trip_line13_3;
 phases AS;
 from trip_node13_3;
 to trip_meter13_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5180,7 +5181,7 @@ name meter_house13_4;
 phases AS;
 from trip_meter13;
 to trip_node13_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5194,7 +5195,7 @@ name trip_line13_4;
 phases AS;
 from trip_node13_4;
 to trip_meter13_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5207,7 +5208,7 @@ name meter_house13_5;
 phases AS;
 from trip_meter13;
 to trip_node13_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5221,7 +5222,7 @@ name trip_line13_5;
 phases AS;
 from trip_node13_5;
 to trip_meter13_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5234,7 +5235,7 @@ name meter_house13_6;
 phases AS;
 from trip_meter13;
 to trip_node13_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5248,7 +5249,7 @@ name trip_line13_6;
 phases AS;
 from trip_node13_6;
 to trip_meter13_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5261,7 +5262,7 @@ name meter_house13_7;
 phases AS;
 from trip_meter13;
 to trip_node13_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5275,7 +5276,7 @@ name trip_line13_7;
 phases AS;
 from trip_node13_7;
 to trip_meter13_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5288,7 +5289,7 @@ name meter_house13_8;
 phases AS;
 from trip_meter13;
 to trip_node13_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5302,7 +5303,7 @@ name trip_line13_8;
 phases AS;
 from trip_node13_8;
 to trip_meter13_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5315,7 +5316,7 @@ name meter_house13_9;
 phases AS;
 from trip_meter13;
 to trip_node13_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5329,7 +5330,7 @@ name trip_line13_9;
 phases AS;
 from trip_node13_9;
 to trip_meter13_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5342,7 +5343,7 @@ name meter_house13_10;
 phases AS;
 from trip_meter13;
 to trip_node13_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5356,7 +5357,7 @@ name trip_line13_10;
 phases AS;
 from trip_node13_10;
 to trip_meter13_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5369,7 +5370,7 @@ name meter_house13_11;
 phases AS;
 from trip_meter13;
 to trip_node13_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5383,7 +5384,7 @@ name trip_line13_11;
 phases AS;
 from trip_node13_11;
 to trip_meter13_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5396,7 +5397,7 @@ name meter_house13_12;
 phases AS;
 from trip_meter13;
 to trip_node13_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5410,7 +5411,7 @@ name trip_line13_12;
 phases AS;
 from trip_node13_12;
 to trip_meter13_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5423,7 +5424,7 @@ name trip_line14;
 phases BS;
 from trip_node14;
 to trip_meter14;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5436,7 +5437,7 @@ name meter_house14_1;
 phases BS;
 from trip_meter14;
 to trip_node14_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5450,7 +5451,7 @@ name trip_line14_1;
 phases BS;
 from trip_node14_1;
 to trip_meter14_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5463,7 +5464,7 @@ name meter_house14_2;
 phases BS;
 from trip_meter14;
 to trip_node14_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5477,7 +5478,7 @@ name trip_line14_2;
 phases BS;
 from trip_node14_2;
 to trip_meter14_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5490,7 +5491,7 @@ name meter_house14_3;
 phases BS;
 from trip_meter14;
 to trip_node14_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5504,7 +5505,7 @@ name trip_line14_3;
 phases BS;
 from trip_node14_3;
 to trip_meter14_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5517,7 +5518,7 @@ name meter_house14_4;
 phases BS;
 from trip_meter14;
 to trip_node14_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5531,7 +5532,7 @@ name trip_line14_4;
 phases BS;
 from trip_node14_4;
 to trip_meter14_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5544,7 +5545,7 @@ name meter_house14_5;
 phases BS;
 from trip_meter14;
 to trip_node14_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5558,7 +5559,7 @@ name trip_line14_5;
 phases BS;
 from trip_node14_5;
 to trip_meter14_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5571,7 +5572,7 @@ name meter_house14_6;
 phases BS;
 from trip_meter14;
 to trip_node14_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5585,7 +5586,7 @@ name trip_line14_6;
 phases BS;
 from trip_node14_6;
 to trip_meter14_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5598,7 +5599,7 @@ name meter_house14_7;
 phases BS;
 from trip_meter14;
 to trip_node14_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5612,7 +5613,7 @@ name trip_line14_7;
 phases BS;
 from trip_node14_7;
 to trip_meter14_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5625,7 +5626,7 @@ name meter_house14_8;
 phases BS;
 from trip_meter14;
 to trip_node14_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5639,7 +5640,7 @@ name trip_line14_8;
 phases BS;
 from trip_node14_8;
 to trip_meter14_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5652,7 +5653,7 @@ name meter_house14_9;
 phases BS;
 from trip_meter14;
 to trip_node14_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5666,7 +5667,7 @@ name trip_line14_9;
 phases BS;
 from trip_node14_9;
 to trip_meter14_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5679,7 +5680,7 @@ name meter_house14_10;
 phases BS;
 from trip_meter14;
 to trip_node14_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5693,7 +5694,7 @@ name trip_line14_10;
 phases BS;
 from trip_node14_10;
 to trip_meter14_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5706,7 +5707,7 @@ name meter_house14_11;
 phases BS;
 from trip_meter14;
 to trip_node14_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5720,7 +5721,7 @@ name trip_line14_11;
 phases BS;
 from trip_node14_11;
 to trip_meter14_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5733,7 +5734,7 @@ name meter_house14_12;
 phases BS;
 from trip_meter14;
 to trip_node14_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5747,7 +5748,7 @@ name trip_line14_12;
 phases BS;
 from trip_node14_12;
 to trip_meter14_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5760,7 +5761,7 @@ name trip_line15;
 phases CS;
 from trip_node15;
 to trip_meter15;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5773,7 +5774,7 @@ name meter_house15_1;
 phases CS;
 from trip_meter15;
 to trip_node15_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5787,7 +5788,7 @@ name trip_line15_1;
 phases CS;
 from trip_node15_1;
 to trip_meter15_1;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5800,7 +5801,7 @@ name meter_house15_2;
 phases CS;
 from trip_meter15;
 to trip_node15_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5814,7 +5815,7 @@ name trip_line15_2;
 phases CS;
 from trip_node15_2;
 to trip_meter15_2;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5827,7 +5828,7 @@ name meter_house15_3;
 phases CS;
 from trip_meter15;
 to trip_node15_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5841,7 +5842,7 @@ name trip_line15_3;
 phases CS;
 from trip_node15_3;
 to trip_meter15_3;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5854,7 +5855,7 @@ name meter_house15_4;
 phases CS;
 from trip_meter15;
 to trip_node15_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5868,7 +5869,7 @@ name trip_line15_4;
 phases CS;
 from trip_node15_4;
 to trip_meter15_4;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5881,7 +5882,7 @@ name meter_house15_5;
 phases CS;
 from trip_meter15;
 to trip_node15_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5895,7 +5896,7 @@ name trip_line15_5;
 phases CS;
 from trip_node15_5;
 to trip_meter15_5;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5908,7 +5909,7 @@ name meter_house15_6;
 phases CS;
 from trip_meter15;
 to trip_node15_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5922,7 +5923,7 @@ name trip_line15_6;
 phases CS;
 from trip_node15_6;
 to trip_meter15_6;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5935,7 +5936,7 @@ name meter_house15_7;
 phases CS;
 from trip_meter15;
 to trip_node15_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5949,7 +5950,7 @@ name trip_line15_7;
 phases CS;
 from trip_node15_7;
 to trip_meter15_7;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5962,7 +5963,7 @@ name meter_house15_8;
 phases CS;
 from trip_meter15;
 to trip_node15_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5976,7 +5977,7 @@ name trip_line15_8;
 phases CS;
 from trip_node15_8;
 to trip_meter15_8;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -5989,7 +5990,7 @@ name meter_house15_9;
 phases CS;
 from trip_meter15;
 to trip_node15_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6003,7 +6004,7 @@ name trip_line15_9;
 phases CS;
 from trip_node15_9;
 to trip_meter15_9;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6016,7 +6017,7 @@ name meter_house15_10;
 phases CS;
 from trip_meter15;
 to trip_node15_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6030,7 +6031,7 @@ name trip_line15_10;
 phases CS;
 from trip_node15_10;
 to trip_meter15_10;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6043,7 +6044,7 @@ name meter_house15_11;
 phases CS;
 from trip_meter15;
 to trip_node15_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6057,7 +6058,7 @@ name trip_line15_11;
 phases CS;
 from trip_node15_11;
 to trip_meter15_11;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6070,7 +6071,7 @@ name meter_house15_12;
 phases CS;
 from trip_meter15;
 to trip_node15_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
@@ -6084,7 +6085,7 @@ name trip_line15_12;
 phases CS;
 from trip_node15_12;
 to trip_meter15_12;
-length 0;
+length 5;
 configuration triplex_line_configuration_1;
 }
 object triplex_meter {
