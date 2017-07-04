@@ -1,0 +1,420 @@
+INFO: fatal set by FNCS_FATAL env var
+INFO: fncs::die() will call exit(EXIT_FAILURE)
+DEBUG: broker = tcp://localhost:5570
+DEBUG: time_delta string = 1ns
+DEBUG: time_delta = 1
+DEBUG: time_delta_multiplier = 1
+DEBUG2: config did not contain any subscriptions
+DEBUG2: -- sending configuration as follows --
+name: player
+broker: tcp://localhost:5570
+time_delta: 1ns
+fatal: yes
+
+DEBUG2: sending HELLO
+DEBUG2: received ACK
+DEBUG2: connection order ID is 0
+DEBUG2: n_sims is 3
+DEBUG2: n_keys is 1
+DEBUG2: key is clear_price
+DEBUG2: time_peer_long is 300000000000 parsed from 300000000000
+DEBUG2: received second ACK
+stops at 172800000000000 nanoseconds
+stops at 172800000000000 in sim time
+DEBUG2: sending TIME_REQUEST of 60000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 60000000000 nanoseconds
+DEBUG1: time_granted 60000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 60000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 120000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 120000000000 nanoseonds
+DEBUG2: time_granted 120000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 180000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 180000000000 nanoseonds
+DEBUG2: time_granted 180000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 240000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 240000000000 nanoseonds
+DEBUG2: time_granted 240000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 300000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 300000000000 nanoseconds
+DEBUG1: time_granted 300000000000 nanoseonds
+DEBUG2: time_granted 300000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 360000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 360000000000 nanoseconds
+DEBUG1: time_granted 360000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 360000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 420000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 420000000000 nanoseonds
+DEBUG2: time_granted 420000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 480000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 480000000000 nanoseonds
+DEBUG2: time_granted 480000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 540000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 540000000000 nanoseonds
+DEBUG2: time_granted 540000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 600000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 600000000000 nanoseconds
+DEBUG1: time_granted 600000000000 nanoseonds
+DEBUG2: time_granted 600000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 660000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 660000000000 nanoseconds
+DEBUG1: time_granted 660000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 660000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 720000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 720000000000 nanoseonds
+DEBUG2: time_granted 720000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 780000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 780000000000 nanoseonds
+DEBUG2: time_granted 780000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 840000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 840000000000 nanoseonds
+DEBUG2: time_granted 840000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 900000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 900000000000 nanoseconds
+DEBUG1: time_granted 900000000000 nanoseonds
+DEBUG2: time_granted 900000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 960000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 960000000000 nanoseconds
+DEBUG1: time_granted 960000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 960000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1020000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 1020000000000 nanoseonds
+DEBUG2: time_granted 1020000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1080000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 1080000000000 nanoseonds
+DEBUG2: time_granted 1080000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1140000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 1140000000000 nanoseonds
+DEBUG2: time_granted 1140000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1200000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1200000000000 nanoseconds
+DEBUG1: time_granted 1200000000000 nanoseonds
+DEBUG2: time_granted 1200000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1260000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1260000000000 nanoseconds
+DEBUG1: time_granted 1260000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 1260000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1320000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 1320000000000 nanoseonds
+DEBUG2: time_granted 1320000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1380000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 1380000000000 nanoseonds
+DEBUG2: time_granted 1380000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1440000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 1440000000000 nanoseonds
+DEBUG2: time_granted 1440000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1500000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1500000000000 nanoseconds
+DEBUG1: time_granted 1500000000000 nanoseonds
+DEBUG2: time_granted 1500000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1560000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1560000000000 nanoseconds
+DEBUG1: time_granted 1560000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 1560000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1620000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 1620000000000 nanoseonds
+DEBUG2: time_granted 1620000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1680000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 1680000000000 nanoseonds
+DEBUG2: time_granted 1680000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1740000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 1740000000000 nanoseonds
+DEBUG2: time_granted 1740000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1800000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1800000000000 nanoseconds
+DEBUG1: time_granted 1800000000000 nanoseonds
+DEBUG2: time_granted 1800000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1860000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1860000000000 nanoseconds
+DEBUG1: time_granted 1860000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 1860000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1920000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 1920000000000 nanoseonds
+DEBUG2: time_granted 1920000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 1980000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 1980000000000 nanoseonds
+DEBUG2: time_granted 1980000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2040000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 2040000000000 nanoseonds
+DEBUG2: time_granted 2040000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2100000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2100000000000 nanoseconds
+DEBUG1: time_granted 2100000000000 nanoseonds
+DEBUG2: time_granted 2100000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2160000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2160000000000 nanoseconds
+DEBUG1: time_granted 2160000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 2160000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2220000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 2220000000000 nanoseonds
+DEBUG2: time_granted 2220000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2280000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 2280000000000 nanoseonds
+DEBUG2: time_granted 2280000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2340000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 2340000000000 nanoseonds
+DEBUG2: time_granted 2340000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2400000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2400000000000 nanoseconds
+DEBUG1: time_granted 2400000000000 nanoseonds
+DEBUG2: time_granted 2400000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2460000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2460000000000 nanoseconds
+DEBUG1: time_granted 2460000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 2460000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2520000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 2520000000000 nanoseonds
+DEBUG2: time_granted 2520000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2580000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 2580000000000 nanoseonds
+DEBUG2: time_granted 2580000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2640000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 2640000000000 nanoseonds
+DEBUG2: time_granted 2640000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2700000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2700000000000 nanoseconds
+DEBUG1: time_granted 2700000000000 nanoseonds
+DEBUG2: time_granted 2700000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2760000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2760000000000 nanoseconds
+DEBUG1: time_granted 2760000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 2760000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2820000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 2820000000000 nanoseonds
+DEBUG2: time_granted 2820000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2880000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 2880000000000 nanoseonds
+DEBUG2: time_granted 2880000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 2940000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 2940000000000 nanoseonds
+DEBUG2: time_granted 2940000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3000000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3000000000000 nanoseconds
+DEBUG1: time_granted 3000000000000 nanoseonds
+DEBUG2: time_granted 3000000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3060000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3060000000000 nanoseconds
+DEBUG1: time_granted 3060000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 3060000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3120000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 3120000000000 nanoseonds
+DEBUG2: time_granted 3120000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3180000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 3180000000000 nanoseonds
+DEBUG2: time_granted 3180000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3240000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 3240000000000 nanoseonds
+DEBUG2: time_granted 3240000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3300000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3300000000000 nanoseconds
+DEBUG1: time_granted 3300000000000 nanoseonds
+DEBUG2: time_granted 3300000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3360000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3360000000000 nanoseconds
+DEBUG1: time_granted 3360000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 3360000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3420000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 3420000000000 nanoseonds
+DEBUG2: time_granted 3420000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3480000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 3480000000000 nanoseonds
+DEBUG2: time_granted 3480000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3540000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 3540000000000 nanoseonds
+DEBUG2: time_granted 3540000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3600000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3600000000000 nanoseconds
+DEBUG1: time_granted 3600000000000 nanoseonds
+DEBUG2: time_granted 3600000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3660000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3660000000000 nanoseconds
+DEBUG1: time_granted 3660000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 3660000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3720000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 3720000000000 nanoseonds
+DEBUG2: time_granted 3720000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3780000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 3780000000000 nanoseonds
+DEBUG2: time_granted 3780000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3840000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 3840000000000 nanoseonds
+DEBUG2: time_granted 3840000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3900000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3900000000000 nanoseconds
+DEBUG1: time_granted 3900000000000 nanoseonds
+DEBUG2: time_granted 3900000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 3960000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3960000000000 nanoseconds
+DEBUG1: time_granted 3960000000000 nanoseonds
+DEBUG1: new time_window of 240000000000 nanoseconds
+DEBUG2: time_granted 3960000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 4020000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 180000000000 nanoseconds left in the window
+DEBUG1: time_granted 4020000000000 nanoseonds
+DEBUG2: time_granted 4020000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 4080000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 120000000000 nanoseconds left in the window
+DEBUG1: time_granted 4080000000000 nanoseonds
+DEBUG2: time_granted 4080000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 4140000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: there are 60000000000 nanoseconds left in the window
+DEBUG1: time_granted 4140000000000 nanoseonds
+DEBUG2: time_granted 4140000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 4200000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 4200000000000 nanoseconds
+DEBUG1: time_granted 4200000000000 nanoseonds
+DEBUG2: time_granted 4200000000000 in sim units
+DEBUG2: sending TIME_REQUEST of 4260000000000 in sim units
+DEBUG2: time advanced 60000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 4260000000000 nanoseconds
+E: 17-07-04 00:33:12 dangling 'DEALER' socket created at src/fncs.cpp:416

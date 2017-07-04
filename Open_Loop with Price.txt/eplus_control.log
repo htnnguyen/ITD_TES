@@ -1,0 +1,293 @@
+INFO: fatal set by FNCS_FATAL env var
+INFO: fncs::die() will call exit(EXIT_FAILURE)
+DEBUG: broker = tcp://localhost:5570
+DEBUG: time_delta string = 300s
+DEBUG: time_delta = 300000000000
+DEBUG: time_delta_multiplier = 1000000000
+DEBUG2: initializing cache for 'rt_price'='0.0'
+DEBUG2: -- sending configuration as follows --
+name: eplus_control
+broker: tcp://localhost:5570
+time_delta: 300s
+fatal: yes
+values:
+  rt_price:
+    topic: player/clear_price
+    default: 0.0
+
+DEBUG2: sending HELLO
+DEBUG2: received ACK
+DEBUG2: connection order ID is 1
+DEBUG2: n_sims is 3
+DEBUG2: n_keys is 180
+DEBUG2: key is controller_house_10_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_10_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_11_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_12_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_13_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_14_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_15_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_1_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_2_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_3_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_4_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_5_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_6_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_7_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_8_9_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_10_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_11_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_12_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_1_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_2_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_3_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_4_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_5_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_6_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_7_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_8_thermostat_controller_cooling_setpoint
+DEBUG2: key is controller_house_9_9_thermostat_controller_cooling_setpoint
+DEBUG2: time_peer_long is 1 parsed from 1
+DEBUG2: received second ACK
+DEBUG2: sending TIME_REQUEST of 300 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 300000000000 nanoseconds
+DEBUG1: time_granted 300000000000 nanoseonds
+DEBUG2: time_granted 300 in sim units
+DEBUG2: sending TIME_REQUEST of 600 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 600000000000 nanoseconds
+DEBUG1: time_granted 600000000000 nanoseonds
+DEBUG2: time_granted 600 in sim units
+DEBUG2: sending TIME_REQUEST of 900 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 900000000000 nanoseconds
+DEBUG1: time_granted 900000000000 nanoseonds
+DEBUG2: time_granted 900 in sim units
+DEBUG2: sending TIME_REQUEST of 1200 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1200000000000 nanoseconds
+DEBUG1: time_granted 1200000000000 nanoseonds
+DEBUG2: time_granted 1200 in sim units
+DEBUG2: sending TIME_REQUEST of 1500 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1500000000000 nanoseconds
+DEBUG1: time_granted 1500000000000 nanoseonds
+DEBUG2: time_granted 1500 in sim units
+DEBUG2: sending TIME_REQUEST of 1800 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 1800000000000 nanoseconds
+DEBUG1: time_granted 1800000000000 nanoseonds
+DEBUG2: time_granted 1800 in sim units
+DEBUG2: sending TIME_REQUEST of 2100 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2100000000000 nanoseconds
+DEBUG1: time_granted 2100000000000 nanoseonds
+DEBUG2: time_granted 2100 in sim units
+DEBUG2: sending TIME_REQUEST of 2400 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2400000000000 nanoseconds
+DEBUG1: time_granted 2400000000000 nanoseonds
+DEBUG2: time_granted 2400 in sim units
+DEBUG2: sending TIME_REQUEST of 2700 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 2700000000000 nanoseconds
+DEBUG1: time_granted 2700000000000 nanoseonds
+DEBUG2: time_granted 2700 in sim units
+DEBUG2: sending TIME_REQUEST of 3000 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3000000000000 nanoseconds
+DEBUG1: time_granted 3000000000000 nanoseonds
+DEBUG2: time_granted 3000 in sim units
+DEBUG2: sending TIME_REQUEST of 3300 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3300000000000 nanoseconds
+DEBUG1: time_granted 3300000000000 nanoseonds
+DEBUG2: time_granted 3300 in sim units
+DEBUG2: sending TIME_REQUEST of 3600 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3600000000000 nanoseconds
+DEBUG1: time_granted 3600000000000 nanoseonds
+DEBUG2: time_granted 3600 in sim units
+DEBUG2: sending TIME_REQUEST of 3900 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 3900000000000 nanoseconds
+DEBUG1: time_granted 3900000000000 nanoseonds
+DEBUG2: time_granted 3900 in sim units
+DEBUG2: sending TIME_REQUEST of 4200 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 4200000000000 nanoseconds
+DEBUG1: time_granted 4200000000000 nanoseonds
+DEBUG2: time_granted 4200 in sim units
+DEBUG2: sending TIME_REQUEST of 4500 in sim units
+DEBUG2: time advanced 300000000000 ns since last request
+DEBUG1: time_window expired
+DEBUG1: sending TIME_REQUEST of 4500000000000 nanoseconds
+E: 17-07-04 00:33:14 dangling 'DEALER' socket created at src/fncs.cpp:416
