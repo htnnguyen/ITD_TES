@@ -1,0 +1,8 @@
+In the Windows cmd run:
+runIEEE13
+
+The price is stored in the file price.txt.
+The control file is eplus_control.py, which acts as DSO.
+Inside the file “eplus_control.py”, there is a function “house_control(i,j,price,controller)”, which is similar as house_controller.py in te30 example.
+The argument "controller" is a dynamic variable that represents “house i j”.
+The simulation is 48h and outputs are stored in *csv
