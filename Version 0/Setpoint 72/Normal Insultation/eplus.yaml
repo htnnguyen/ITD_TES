@@ -1,0 +1,10 @@
+name: eplus_control
+time_delta: 300s
+broker: tcp://localhost:5570
+values:
+    rt_price:
+        topic: player/clear_price
+        default: 0.0
+
+
+
