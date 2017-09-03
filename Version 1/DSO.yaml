@@ -1,0 +1,9 @@
+name: DSO
+time_delta: 1s
+broker: tcp://localhost:5570
+values:
+    sw_status:
+        topic: player/sw_status
+        default: 0.0
+  
+
