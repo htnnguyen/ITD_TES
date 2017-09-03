@@ -11,3 +11,7 @@ which is similar to te30. We test for the extended IEEE13 with 180 houses.
 The "Open_Loop with Price.txt" folder contains a program that only tests the response of the IEEE13 system with pricing signal. 
 No market clearing (auction.py) is considered.
 
+The "Version 0" folder contains a program that constructs the baseload of all 180 houses given weather scenarios, thermal intergrity level, and thermal setpoints.
+
+The "Version 1" contain a direct load control example where different houses are represented by different processes (house_controller.py +houseID)
+
