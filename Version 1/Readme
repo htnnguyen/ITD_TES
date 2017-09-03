@@ -1,0 +1,10 @@
+Sucessfully run the direct control load examples with 180 household agents (processes):
+Run prepare_agents.py to create 180 yaml files or copying the files from the "Yaml files" folder
+Run run_180_agents.bat to run the simulation
+The simulation takes over 10 minutes.
+
+Description: The DSO.py represents the Distribution System Operator. It sends signals to 180 houses (house_controller.py) to turn on/off 
+their HVACs. Each house is represented by a python process (house_controller.py + the houseID name).
+
+In this simulation, we perform turing on/off HVACs based on the loadshed.player signals, which is similar to the TESP loadshed example.
+
