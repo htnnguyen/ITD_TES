@@ -15,3 +15,5 @@ The "Version 0" folder contains a program that constructs the baseload of all 18
 
 The "Version 1" contain a direct load control example where different houses are represented by different processes (house_controller.py +houseID)
 
+The "Version 2" contain a price based control example where different houses are represented by different processes (house_controller.py +houseID) using PowerMatcher framework. There are subfolders:
+  1) Version 2.0 Loadshed example using price signal. Instead of direct load control signals, the DSO sends price which can adjust the number of HVACs turning off. The price is cleared by considering the submitted bid of each house.
