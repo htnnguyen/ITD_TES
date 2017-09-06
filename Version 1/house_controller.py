@@ -2,33 +2,33 @@
 import fncs
 import sys
 
-
 def house_control(houseID,value):
 	if value==(-1):
-		T=100
-		fncs.publish(houseID+'_cooling_setpoint', T)#turn off
+		T=85
+		fncs.publish(houseID+'_cooling_setpoint', T)
+		#turn off
 	elif value==0:
-		T=76
-		fncs.publish(houseID+'_cooling_setpoint', T) #restore
-	else:
-		T=60
-		fncs.publish(houseID+'_cooling_setpoint', T) #turn on
+		T=72
+		fncs.publish(houseID+'_cooling_setpoint', T)
+		 #restore
+	elif value==1:
+		T=65
+		fncs.publish(houseID+'_cooling_setpoint', T)
+		 #turn on
 	return
    
 houseID =sys.argv[1]
 #fncs.initialize()
 time_granted = 0 # time variable for checking the retuned time from FNCS
 timeSim= 0
-#fncs.initialize()
 tf = 6 # simulation time in hours
-value1=0
 deltaT = 60  # simulation time interval in seconds, which usually the same as controller period 
 while (time_granted < tf*3600):
     # =================Simulation for each time step ============================================ 
     # Initialization when time = 0
 	
 	if time_granted == 0:
-		fncs.initialize()   
+		fncs.initialize()
 	if time_granted != 0:
 		events = fncs.get_events()
 		for key in events:
@@ -36,18 +36,12 @@ while (time_granted < tf*3600):
 			value = float(fncs.get_value(key).decode())
 			# print(value)
 			if topic == houseID+'_status':
-				value1=value
-	house_control(houseID,value1)
+				#value1=value
+				house_control(houseID,value)
 	if (time_granted < (timeSim + deltaT)) :
 		time_granted = fncs.time_request(timeSim + deltaT)
 	else:
 		timeSim = timeSim + deltaT
 		time_granted = fncs.time_request(timeSim + deltaT)
 
-
 fncs.finalize()        
-        
-        
-        
-                
-   
