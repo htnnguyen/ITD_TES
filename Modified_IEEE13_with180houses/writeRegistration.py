@@ -30,6 +30,8 @@ def writeRegistration (filename):
     max_range_low = -2.0
     min_base_setpoint = 76.0
     max_base_setpoint = 80.0
+    min_theta = 0.0001
+    max_theta = 0.0005
     bid_delay = 60
     use_predictive_bidding = 0
     use_override = "OFF"
@@ -111,11 +113,12 @@ def writeRegistration (filename):
                     ramp_high = np.random.uniform (min_ramp_high, max_ramp_high)
                     range_high = np.random.uniform (min_range_high, max_range_high)
                     base_setpoint = np.random.uniform (min_base_setpoint, max_base_setpoint)
+                    theta_random = np.random.uniform (min_theta, max_theta)
                     controllers[controller_name]['controller_information'] = {'control_mode': control_mode, 'marketName': marketName, 'houseName': houseName, 'bid_id': controller_name, 'period': periodController, \
                                'ramp_low': ramp_low, 'ramp_high': ramp_high, 'range_low': range_low, 'range_high': range_high, 'base_setpoint': base_setpoint, \
                                'bid_delay': bid_delay, 'use_predictive_bidding': use_predictive_bidding, 'use_override': use_override}
                     controllers[controller_name]['market_information'] = {'market_id': 0, 'market_unit': unit, 'initial_price': initial_price, 'average_price': initial_price, 'std_dev': std_dev, 'clear_price': initial_price, 'price_cap': price_cap, 'period': periodMarket}
-#                   controllers[controller_name]['house_information'] = {'target': 'air_temperature', 'deadband': 0, 'setpoint0': -1, 'currTemp': -1, 'controlled_load_all': 0, 'powerstate': 'ON'}
+                    controllers[controller_name]['house_information'] = {'Tbliss': 75, 'd': 10, 'theta': theta_random, 'P': 2, 'houseType': 'small'}
                     isELECTRIC = False
                        
     # Write market dictionary
@@ -126,9 +129,19 @@ def writeRegistration (filename):
     auctions[marketName]['statistics_information'] = {'stat_mode': stat_mode, 'interval': interval, 'stat_type': stat_type, 'value': [0 for i in range(len(stat_mode))]}
     # obtain controller information for market:
     controllers_names = []
+    controllers_Tbliss = []
+    controllers_d = []
+    controllers_theta = []
+    controllers_P = []
+    controllers_houseType = []
     for key, value in controllers.items(): # Add all controllers
         controllers_names.append(key)
-    auctions[marketName]['controller_information'] = {'name': controllers_names, 'price': [0 for i in range(len(controllers))], 'quantity': [0.0 for i in range(len(controllers))], 'state': ["ON" for i in range(len(controllers))]}
+        controllers_Tbliss.append(controllers[key]['house_information']['Tbliss'])
+        controllers_d.append(controllers[key]['house_information']['d'])
+        controllers_theta.append(controllers[key]['house_information']['theta'])
+        controllers_P.append(controllers[key]['house_information']['P'])
+        controllers_houseType.append(controllers[key]['house_information']['houseType'])
+    auctions[marketName]['controller_information'] = {'name': controllers_names, 'price': [0 for i in range(len(controllers))], 'quantity': [0.0 for i in range(len(controllers))], 'state': ["ON" for i in range(len(controllers))], 'Tbliss': controllers_Tbliss, 'd': controllers_d, 'P': controllers_P, 'theta': controllers_theta, 'houseType': controllers_houseType, 'air_temperature': [78 for i in range(len(controllers))]}
     
     # Write file for controller registration
     for key, value in controllers.items(): # Process each controller
@@ -150,6 +163,7 @@ def writeRegistration (filename):
         publications['state'] = {'propertyType': 'string', 'propertyUnit': 'none', 'propertyValue': 'BS_UNKNOWN'}
         publications['rebid'] = {'propertyType': 'integer', 'propertyUnit': 'none', 'propertyValue': 0}
         publications['override_prop'] = {'propertyType': 'string', 'propertyUnit': 'none', 'propertyValue': 'none'}
+        publications['air_temperature'] = {'propertyType': 'double', 'propertyUnit': 'none', 'propertyValue': 78}
         singleControllerReg['publications'] = publications
         # subscriptions
         subscriptions = {}
@@ -202,6 +216,7 @@ def writeRegistration (filename):
         if controllers[key]['controller_information']['marketName'] == marketName:
             singleControllerReg = {}
             singleControllerReg[key] = {}
+            singleControllerReg[key]['air_temperature'] = {'propertyType': 'double', 'propertyUnit': 'none', 'propertyValue': 0}
             singleControllerReg[key]['price'] = {'propertyType': 'double', 'propertyUnit': 'none', 'propertyValue': 0.0}
             singleControllerReg[key]['quantity'] = {'propertyType': 'double', 'propertyUnit': 'none', 'propertyValue': 0.0}
             singleControllerReg[key]['bid_id'] = {'propertyType': 'string', 'propertyUnit': 'none', 'propertyValue': 0}

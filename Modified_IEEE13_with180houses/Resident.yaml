@@ -1,0 +1,7 @@
+name: Resident
+time_delta: 300s
+broker: tcp://localhost:5570
+values:
+    MonthlyBill:
+        topic: auction_Market_1/MonthlyBill
+        default: 1

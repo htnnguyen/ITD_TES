@@ -1,0 +1,12 @@
+*.py
+input/
+output/
+__pycache__/
+*.out
+*.csv
+*.json
+*.audit
+*.xml
+broker_trace.txt
+*FNCS_Config.txt
+

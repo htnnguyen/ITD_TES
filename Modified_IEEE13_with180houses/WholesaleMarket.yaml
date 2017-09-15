@@ -1,0 +1,7 @@
+name: WholesaleMarket
+time_delta: 60s
+broker: tcp://localhost:5570
+values:
+    # FilePrice:
+        # topic: player/WP
+        # default: 1
