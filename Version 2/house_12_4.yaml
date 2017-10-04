@@ -1,0 +1,7 @@
+name: house_12_4
+time_delta: 5m
+broker: tcp://localhost:5570
+values:
+    house_12_4_status:
+        topic: DSO/house_12_4_status
+        default: 0.0
