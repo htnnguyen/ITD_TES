@@ -1,0 +1,1632 @@
+name: DSO
+time_delta: 10s
+broker: tcp://localhost:5570
+values:
+    base_line:
+        topic: player/base_line
+        default: 0.0
+    distribution_load:
+        topic: gridlabdSimulator1/distribution_load
+        default: 0.0
+    house_1_1_bidding_curves_pistar:
+        topic: house_1_1/house_1_1_bidding_curves_pistar
+        default: 0.0
+    house_1_1_power_level:
+        topic: house_1_1/house_1_1_power_level
+        default: 0.0
+    house_1_1_rt_power:
+        topic: house_1_1/house_1_1_rt_power
+        default: 0.0
+    house_1_2_bidding_curves_pistar:
+        topic: house_1_2/house_1_2_bidding_curves_pistar
+        default: 0.0
+    house_1_2_power_level:
+        topic: house_1_2/house_1_2_power_level
+        default: 0.0
+    house_1_2_rt_power:
+        topic: house_1_2/house_1_2_rt_power
+        default: 0.0
+    house_1_3_bidding_curves_pistar:
+        topic: house_1_3/house_1_3_bidding_curves_pistar
+        default: 0.0
+    house_1_3_power_level:
+        topic: house_1_3/house_1_3_power_level
+        default: 0.0
+    house_1_3_rt_power:
+        topic: house_1_3/house_1_3_rt_power
+        default: 0.0
+    house_1_4_bidding_curves_pistar:
+        topic: house_1_4/house_1_4_bidding_curves_pistar
+        default: 0.0
+    house_1_4_power_level:
+        topic: house_1_4/house_1_4_power_level
+        default: 0.0
+    house_1_4_rt_power:
+        topic: house_1_4/house_1_4_rt_power
+        default: 0.0
+    house_1_5_bidding_curves_pistar:
+        topic: house_1_5/house_1_5_bidding_curves_pistar
+        default: 0.0
+    house_1_5_power_level:
+        topic: house_1_5/house_1_5_power_level
+        default: 0.0
+    house_1_5_rt_power:
+        topic: house_1_5/house_1_5_rt_power
+        default: 0.0
+    house_1_6_bidding_curves_pistar:
+        topic: house_1_6/house_1_6_bidding_curves_pistar
+        default: 0.0
+    house_1_6_power_level:
+        topic: house_1_6/house_1_6_power_level
+        default: 0.0
+    house_1_6_rt_power:
+        topic: house_1_6/house_1_6_rt_power
+        default: 0.0
+    house_1_7_bidding_curves_pistar:
+        topic: house_1_7/house_1_7_bidding_curves_pistar
+        default: 0.0
+    house_1_7_power_level:
+        topic: house_1_7/house_1_7_power_level
+        default: 0.0
+    house_1_7_rt_power:
+        topic: house_1_7/house_1_7_rt_power
+        default: 0.0
+    house_1_8_bidding_curves_pistar:
+        topic: house_1_8/house_1_8_bidding_curves_pistar
+        default: 0.0
+    house_1_8_power_level:
+        topic: house_1_8/house_1_8_power_level
+        default: 0.0
+    house_1_8_rt_power:
+        topic: house_1_8/house_1_8_rt_power
+        default: 0.0
+    house_1_9_bidding_curves_pistar:
+        topic: house_1_9/house_1_9_bidding_curves_pistar
+        default: 0.0
+    house_1_9_power_level:
+        topic: house_1_9/house_1_9_power_level
+        default: 0.0
+    house_1_9_rt_power:
+        topic: house_1_9/house_1_9_rt_power
+        default: 0.0
+    house_1_10_bidding_curves_pistar:
+        topic: house_1_10/house_1_10_bidding_curves_pistar
+        default: 0.0
+    house_1_10_power_level:
+        topic: house_1_10/house_1_10_power_level
+        default: 0.0
+    house_1_10_rt_power:
+        topic: house_1_10/house_1_10_rt_power
+        default: 0.0
+    house_1_11_bidding_curves_pistar:
+        topic: house_1_11/house_1_11_bidding_curves_pistar
+        default: 0.0
+    house_1_11_power_level:
+        topic: house_1_11/house_1_11_power_level
+        default: 0.0
+    house_1_11_rt_power:
+        topic: house_1_11/house_1_11_rt_power
+        default: 0.0
+    house_1_12_bidding_curves_pistar:
+        topic: house_1_12/house_1_12_bidding_curves_pistar
+        default: 0.0
+    house_1_12_power_level:
+        topic: house_1_12/house_1_12_power_level
+        default: 0.0
+    house_1_12_rt_power:
+        topic: house_1_12/house_1_12_rt_power
+        default: 0.0
+    house_2_1_bidding_curves_pistar:
+        topic: house_2_1/house_2_1_bidding_curves_pistar
+        default: 0.0
+    house_2_1_power_level:
+        topic: house_2_1/house_2_1_power_level
+        default: 0.0
+    house_2_1_rt_power:
+        topic: house_2_1/house_2_1_rt_power
+        default: 0.0
+    house_2_2_bidding_curves_pistar:
+        topic: house_2_2/house_2_2_bidding_curves_pistar
+        default: 0.0
+    house_2_2_power_level:
+        topic: house_2_2/house_2_2_power_level
+        default: 0.0
+    house_2_2_rt_power:
+        topic: house_2_2/house_2_2_rt_power
+        default: 0.0
+    house_2_3_bidding_curves_pistar:
+        topic: house_2_3/house_2_3_bidding_curves_pistar
+        default: 0.0
+    house_2_3_power_level:
+        topic: house_2_3/house_2_3_power_level
+        default: 0.0
+    house_2_3_rt_power:
+        topic: house_2_3/house_2_3_rt_power
+        default: 0.0
+    house_2_4_bidding_curves_pistar:
+        topic: house_2_4/house_2_4_bidding_curves_pistar
+        default: 0.0
+    house_2_4_power_level:
+        topic: house_2_4/house_2_4_power_level
+        default: 0.0
+    house_2_4_rt_power:
+        topic: house_2_4/house_2_4_rt_power
+        default: 0.0
+    house_2_5_bidding_curves_pistar:
+        topic: house_2_5/house_2_5_bidding_curves_pistar
+        default: 0.0
+    house_2_5_power_level:
+        topic: house_2_5/house_2_5_power_level
+        default: 0.0
+    house_2_5_rt_power:
+        topic: house_2_5/house_2_5_rt_power
+        default: 0.0
+    house_2_6_bidding_curves_pistar:
+        topic: house_2_6/house_2_6_bidding_curves_pistar
+        default: 0.0
+    house_2_6_power_level:
+        topic: house_2_6/house_2_6_power_level
+        default: 0.0
+    house_2_6_rt_power:
+        topic: house_2_6/house_2_6_rt_power
+        default: 0.0
+    house_2_7_bidding_curves_pistar:
+        topic: house_2_7/house_2_7_bidding_curves_pistar
+        default: 0.0
+    house_2_7_power_level:
+        topic: house_2_7/house_2_7_power_level
+        default: 0.0
+    house_2_7_rt_power:
+        topic: house_2_7/house_2_7_rt_power
+        default: 0.0
+    house_2_8_bidding_curves_pistar:
+        topic: house_2_8/house_2_8_bidding_curves_pistar
+        default: 0.0
+    house_2_8_power_level:
+        topic: house_2_8/house_2_8_power_level
+        default: 0.0
+    house_2_8_rt_power:
+        topic: house_2_8/house_2_8_rt_power
+        default: 0.0
+    house_2_9_bidding_curves_pistar:
+        topic: house_2_9/house_2_9_bidding_curves_pistar
+        default: 0.0
+    house_2_9_power_level:
+        topic: house_2_9/house_2_9_power_level
+        default: 0.0
+    house_2_9_rt_power:
+        topic: house_2_9/house_2_9_rt_power
+        default: 0.0
+    house_2_10_bidding_curves_pistar:
+        topic: house_2_10/house_2_10_bidding_curves_pistar
+        default: 0.0
+    house_2_10_power_level:
+        topic: house_2_10/house_2_10_power_level
+        default: 0.0
+    house_2_10_rt_power:
+        topic: house_2_10/house_2_10_rt_power
+        default: 0.0
+    house_2_11_bidding_curves_pistar:
+        topic: house_2_11/house_2_11_bidding_curves_pistar
+        default: 0.0
+    house_2_11_power_level:
+        topic: house_2_11/house_2_11_power_level
+        default: 0.0
+    house_2_11_rt_power:
+        topic: house_2_11/house_2_11_rt_power
+        default: 0.0
+    house_2_12_bidding_curves_pistar:
+        topic: house_2_12/house_2_12_bidding_curves_pistar
+        default: 0.0
+    house_2_12_power_level:
+        topic: house_2_12/house_2_12_power_level
+        default: 0.0
+    house_2_12_rt_power:
+        topic: house_2_12/house_2_12_rt_power
+        default: 0.0
+    house_3_1_bidding_curves_pistar:
+        topic: house_3_1/house_3_1_bidding_curves_pistar
+        default: 0.0
+    house_3_1_power_level:
+        topic: house_3_1/house_3_1_power_level
+        default: 0.0
+    house_3_1_rt_power:
+        topic: house_3_1/house_3_1_rt_power
+        default: 0.0
+    house_3_2_bidding_curves_pistar:
+        topic: house_3_2/house_3_2_bidding_curves_pistar
+        default: 0.0
+    house_3_2_power_level:
+        topic: house_3_2/house_3_2_power_level
+        default: 0.0
+    house_3_2_rt_power:
+        topic: house_3_2/house_3_2_rt_power
+        default: 0.0
+    house_3_3_bidding_curves_pistar:
+        topic: house_3_3/house_3_3_bidding_curves_pistar
+        default: 0.0
+    house_3_3_power_level:
+        topic: house_3_3/house_3_3_power_level
+        default: 0.0
+    house_3_3_rt_power:
+        topic: house_3_3/house_3_3_rt_power
+        default: 0.0
+    house_3_4_bidding_curves_pistar:
+        topic: house_3_4/house_3_4_bidding_curves_pistar
+        default: 0.0
+    house_3_4_power_level:
+        topic: house_3_4/house_3_4_power_level
+        default: 0.0
+    house_3_4_rt_power:
+        topic: house_3_4/house_3_4_rt_power
+        default: 0.0
+    house_3_5_bidding_curves_pistar:
+        topic: house_3_5/house_3_5_bidding_curves_pistar
+        default: 0.0
+    house_3_5_power_level:
+        topic: house_3_5/house_3_5_power_level
+        default: 0.0
+    house_3_5_rt_power:
+        topic: house_3_5/house_3_5_rt_power
+        default: 0.0
+    house_3_6_bidding_curves_pistar:
+        topic: house_3_6/house_3_6_bidding_curves_pistar
+        default: 0.0
+    house_3_6_power_level:
+        topic: house_3_6/house_3_6_power_level
+        default: 0.0
+    house_3_6_rt_power:
+        topic: house_3_6/house_3_6_rt_power
+        default: 0.0
+    house_3_7_bidding_curves_pistar:
+        topic: house_3_7/house_3_7_bidding_curves_pistar
+        default: 0.0
+    house_3_7_power_level:
+        topic: house_3_7/house_3_7_power_level
+        default: 0.0
+    house_3_7_rt_power:
+        topic: house_3_7/house_3_7_rt_power
+        default: 0.0
+    house_3_8_bidding_curves_pistar:
+        topic: house_3_8/house_3_8_bidding_curves_pistar
+        default: 0.0
+    house_3_8_power_level:
+        topic: house_3_8/house_3_8_power_level
+        default: 0.0
+    house_3_8_rt_power:
+        topic: house_3_8/house_3_8_rt_power
+        default: 0.0
+    house_3_9_bidding_curves_pistar:
+        topic: house_3_9/house_3_9_bidding_curves_pistar
+        default: 0.0
+    house_3_9_power_level:
+        topic: house_3_9/house_3_9_power_level
+        default: 0.0
+    house_3_9_rt_power:
+        topic: house_3_9/house_3_9_rt_power
+        default: 0.0
+    house_3_10_bidding_curves_pistar:
+        topic: house_3_10/house_3_10_bidding_curves_pistar
+        default: 0.0
+    house_3_10_power_level:
+        topic: house_3_10/house_3_10_power_level
+        default: 0.0
+    house_3_10_rt_power:
+        topic: house_3_10/house_3_10_rt_power
+        default: 0.0
+    house_3_11_bidding_curves_pistar:
+        topic: house_3_11/house_3_11_bidding_curves_pistar
+        default: 0.0
+    house_3_11_power_level:
+        topic: house_3_11/house_3_11_power_level
+        default: 0.0
+    house_3_11_rt_power:
+        topic: house_3_11/house_3_11_rt_power
+        default: 0.0
+    house_3_12_bidding_curves_pistar:
+        topic: house_3_12/house_3_12_bidding_curves_pistar
+        default: 0.0
+    house_3_12_power_level:
+        topic: house_3_12/house_3_12_power_level
+        default: 0.0
+    house_3_12_rt_power:
+        topic: house_3_12/house_3_12_rt_power
+        default: 0.0
+    house_4_1_bidding_curves_pistar:
+        topic: house_4_1/house_4_1_bidding_curves_pistar
+        default: 0.0
+    house_4_1_power_level:
+        topic: house_4_1/house_4_1_power_level
+        default: 0.0
+    house_4_1_rt_power:
+        topic: house_4_1/house_4_1_rt_power
+        default: 0.0
+    house_4_2_bidding_curves_pistar:
+        topic: house_4_2/house_4_2_bidding_curves_pistar
+        default: 0.0
+    house_4_2_power_level:
+        topic: house_4_2/house_4_2_power_level
+        default: 0.0
+    house_4_2_rt_power:
+        topic: house_4_2/house_4_2_rt_power
+        default: 0.0
+    house_4_3_bidding_curves_pistar:
+        topic: house_4_3/house_4_3_bidding_curves_pistar
+        default: 0.0
+    house_4_3_power_level:
+        topic: house_4_3/house_4_3_power_level
+        default: 0.0
+    house_4_3_rt_power:
+        topic: house_4_3/house_4_3_rt_power
+        default: 0.0
+    house_4_4_bidding_curves_pistar:
+        topic: house_4_4/house_4_4_bidding_curves_pistar
+        default: 0.0
+    house_4_4_power_level:
+        topic: house_4_4/house_4_4_power_level
+        default: 0.0
+    house_4_4_rt_power:
+        topic: house_4_4/house_4_4_rt_power
+        default: 0.0
+    house_4_5_bidding_curves_pistar:
+        topic: house_4_5/house_4_5_bidding_curves_pistar
+        default: 0.0
+    house_4_5_power_level:
+        topic: house_4_5/house_4_5_power_level
+        default: 0.0
+    house_4_5_rt_power:
+        topic: house_4_5/house_4_5_rt_power
+        default: 0.0
+    house_4_6_bidding_curves_pistar:
+        topic: house_4_6/house_4_6_bidding_curves_pistar
+        default: 0.0
+    house_4_6_power_level:
+        topic: house_4_6/house_4_6_power_level
+        default: 0.0
+    house_4_6_rt_power:
+        topic: house_4_6/house_4_6_rt_power
+        default: 0.0
+    house_4_7_bidding_curves_pistar:
+        topic: house_4_7/house_4_7_bidding_curves_pistar
+        default: 0.0
+    house_4_7_power_level:
+        topic: house_4_7/house_4_7_power_level
+        default: 0.0
+    house_4_7_rt_power:
+        topic: house_4_7/house_4_7_rt_power
+        default: 0.0
+    house_4_8_bidding_curves_pistar:
+        topic: house_4_8/house_4_8_bidding_curves_pistar
+        default: 0.0
+    house_4_8_power_level:
+        topic: house_4_8/house_4_8_power_level
+        default: 0.0
+    house_4_8_rt_power:
+        topic: house_4_8/house_4_8_rt_power
+        default: 0.0
+    house_4_9_bidding_curves_pistar:
+        topic: house_4_9/house_4_9_bidding_curves_pistar
+        default: 0.0
+    house_4_9_power_level:
+        topic: house_4_9/house_4_9_power_level
+        default: 0.0
+    house_4_9_rt_power:
+        topic: house_4_9/house_4_9_rt_power
+        default: 0.0
+    house_4_10_bidding_curves_pistar:
+        topic: house_4_10/house_4_10_bidding_curves_pistar
+        default: 0.0
+    house_4_10_power_level:
+        topic: house_4_10/house_4_10_power_level
+        default: 0.0
+    house_4_10_rt_power:
+        topic: house_4_10/house_4_10_rt_power
+        default: 0.0
+    house_4_11_bidding_curves_pistar:
+        topic: house_4_11/house_4_11_bidding_curves_pistar
+        default: 0.0
+    house_4_11_power_level:
+        topic: house_4_11/house_4_11_power_level
+        default: 0.0
+    house_4_11_rt_power:
+        topic: house_4_11/house_4_11_rt_power
+        default: 0.0
+    house_4_12_bidding_curves_pistar:
+        topic: house_4_12/house_4_12_bidding_curves_pistar
+        default: 0.0
+    house_4_12_power_level:
+        topic: house_4_12/house_4_12_power_level
+        default: 0.0
+    house_4_12_rt_power:
+        topic: house_4_12/house_4_12_rt_power
+        default: 0.0
+    house_5_1_bidding_curves_pistar:
+        topic: house_5_1/house_5_1_bidding_curves_pistar
+        default: 0.0
+    house_5_1_power_level:
+        topic: house_5_1/house_5_1_power_level
+        default: 0.0
+    house_5_1_rt_power:
+        topic: house_5_1/house_5_1_rt_power
+        default: 0.0
+    house_5_2_bidding_curves_pistar:
+        topic: house_5_2/house_5_2_bidding_curves_pistar
+        default: 0.0
+    house_5_2_power_level:
+        topic: house_5_2/house_5_2_power_level
+        default: 0.0
+    house_5_2_rt_power:
+        topic: house_5_2/house_5_2_rt_power
+        default: 0.0
+    house_5_3_bidding_curves_pistar:
+        topic: house_5_3/house_5_3_bidding_curves_pistar
+        default: 0.0
+    house_5_3_power_level:
+        topic: house_5_3/house_5_3_power_level
+        default: 0.0
+    house_5_3_rt_power:
+        topic: house_5_3/house_5_3_rt_power
+        default: 0.0
+    house_5_4_bidding_curves_pistar:
+        topic: house_5_4/house_5_4_bidding_curves_pistar
+        default: 0.0
+    house_5_4_power_level:
+        topic: house_5_4/house_5_4_power_level
+        default: 0.0
+    house_5_4_rt_power:
+        topic: house_5_4/house_5_4_rt_power
+        default: 0.0
+    house_5_5_bidding_curves_pistar:
+        topic: house_5_5/house_5_5_bidding_curves_pistar
+        default: 0.0
+    house_5_5_power_level:
+        topic: house_5_5/house_5_5_power_level
+        default: 0.0
+    house_5_5_rt_power:
+        topic: house_5_5/house_5_5_rt_power
+        default: 0.0
+    house_5_6_bidding_curves_pistar:
+        topic: house_5_6/house_5_6_bidding_curves_pistar
+        default: 0.0
+    house_5_6_power_level:
+        topic: house_5_6/house_5_6_power_level
+        default: 0.0
+    house_5_6_rt_power:
+        topic: house_5_6/house_5_6_rt_power
+        default: 0.0
+    house_5_7_bidding_curves_pistar:
+        topic: house_5_7/house_5_7_bidding_curves_pistar
+        default: 0.0
+    house_5_7_power_level:
+        topic: house_5_7/house_5_7_power_level
+        default: 0.0
+    house_5_7_rt_power:
+        topic: house_5_7/house_5_7_rt_power
+        default: 0.0
+    house_5_8_bidding_curves_pistar:
+        topic: house_5_8/house_5_8_bidding_curves_pistar
+        default: 0.0
+    house_5_8_power_level:
+        topic: house_5_8/house_5_8_power_level
+        default: 0.0
+    house_5_8_rt_power:
+        topic: house_5_8/house_5_8_rt_power
+        default: 0.0
+    house_5_9_bidding_curves_pistar:
+        topic: house_5_9/house_5_9_bidding_curves_pistar
+        default: 0.0
+    house_5_9_power_level:
+        topic: house_5_9/house_5_9_power_level
+        default: 0.0
+    house_5_9_rt_power:
+        topic: house_5_9/house_5_9_rt_power
+        default: 0.0
+    house_5_10_bidding_curves_pistar:
+        topic: house_5_10/house_5_10_bidding_curves_pistar
+        default: 0.0
+    house_5_10_power_level:
+        topic: house_5_10/house_5_10_power_level
+        default: 0.0
+    house_5_10_rt_power:
+        topic: house_5_10/house_5_10_rt_power
+        default: 0.0
+    house_5_11_bidding_curves_pistar:
+        topic: house_5_11/house_5_11_bidding_curves_pistar
+        default: 0.0
+    house_5_11_power_level:
+        topic: house_5_11/house_5_11_power_level
+        default: 0.0
+    house_5_11_rt_power:
+        topic: house_5_11/house_5_11_rt_power
+        default: 0.0
+    house_5_12_bidding_curves_pistar:
+        topic: house_5_12/house_5_12_bidding_curves_pistar
+        default: 0.0
+    house_5_12_power_level:
+        topic: house_5_12/house_5_12_power_level
+        default: 0.0
+    house_5_12_rt_power:
+        topic: house_5_12/house_5_12_rt_power
+        default: 0.0
+    house_6_1_bidding_curves_pistar:
+        topic: house_6_1/house_6_1_bidding_curves_pistar
+        default: 0.0
+    house_6_1_power_level:
+        topic: house_6_1/house_6_1_power_level
+        default: 0.0
+    house_6_1_rt_power:
+        topic: house_6_1/house_6_1_rt_power
+        default: 0.0
+    house_6_2_bidding_curves_pistar:
+        topic: house_6_2/house_6_2_bidding_curves_pistar
+        default: 0.0
+    house_6_2_power_level:
+        topic: house_6_2/house_6_2_power_level
+        default: 0.0
+    house_6_2_rt_power:
+        topic: house_6_2/house_6_2_rt_power
+        default: 0.0
+    house_6_3_bidding_curves_pistar:
+        topic: house_6_3/house_6_3_bidding_curves_pistar
+        default: 0.0
+    house_6_3_power_level:
+        topic: house_6_3/house_6_3_power_level
+        default: 0.0
+    house_6_3_rt_power:
+        topic: house_6_3/house_6_3_rt_power
+        default: 0.0
+    house_6_4_bidding_curves_pistar:
+        topic: house_6_4/house_6_4_bidding_curves_pistar
+        default: 0.0
+    house_6_4_power_level:
+        topic: house_6_4/house_6_4_power_level
+        default: 0.0
+    house_6_4_rt_power:
+        topic: house_6_4/house_6_4_rt_power
+        default: 0.0
+    house_6_5_bidding_curves_pistar:
+        topic: house_6_5/house_6_5_bidding_curves_pistar
+        default: 0.0
+    house_6_5_power_level:
+        topic: house_6_5/house_6_5_power_level
+        default: 0.0
+    house_6_5_rt_power:
+        topic: house_6_5/house_6_5_rt_power
+        default: 0.0
+    house_6_6_bidding_curves_pistar:
+        topic: house_6_6/house_6_6_bidding_curves_pistar
+        default: 0.0
+    house_6_6_power_level:
+        topic: house_6_6/house_6_6_power_level
+        default: 0.0
+    house_6_6_rt_power:
+        topic: house_6_6/house_6_6_rt_power
+        default: 0.0
+    house_6_7_bidding_curves_pistar:
+        topic: house_6_7/house_6_7_bidding_curves_pistar
+        default: 0.0
+    house_6_7_power_level:
+        topic: house_6_7/house_6_7_power_level
+        default: 0.0
+    house_6_7_rt_power:
+        topic: house_6_7/house_6_7_rt_power
+        default: 0.0
+    house_6_8_bidding_curves_pistar:
+        topic: house_6_8/house_6_8_bidding_curves_pistar
+        default: 0.0
+    house_6_8_power_level:
+        topic: house_6_8/house_6_8_power_level
+        default: 0.0
+    house_6_8_rt_power:
+        topic: house_6_8/house_6_8_rt_power
+        default: 0.0
+    house_6_9_bidding_curves_pistar:
+        topic: house_6_9/house_6_9_bidding_curves_pistar
+        default: 0.0
+    house_6_9_power_level:
+        topic: house_6_9/house_6_9_power_level
+        default: 0.0
+    house_6_9_rt_power:
+        topic: house_6_9/house_6_9_rt_power
+        default: 0.0
+    house_6_10_bidding_curves_pistar:
+        topic: house_6_10/house_6_10_bidding_curves_pistar
+        default: 0.0
+    house_6_10_power_level:
+        topic: house_6_10/house_6_10_power_level
+        default: 0.0
+    house_6_10_rt_power:
+        topic: house_6_10/house_6_10_rt_power
+        default: 0.0
+    house_6_11_bidding_curves_pistar:
+        topic: house_6_11/house_6_11_bidding_curves_pistar
+        default: 0.0
+    house_6_11_power_level:
+        topic: house_6_11/house_6_11_power_level
+        default: 0.0
+    house_6_11_rt_power:
+        topic: house_6_11/house_6_11_rt_power
+        default: 0.0
+    house_6_12_bidding_curves_pistar:
+        topic: house_6_12/house_6_12_bidding_curves_pistar
+        default: 0.0
+    house_6_12_power_level:
+        topic: house_6_12/house_6_12_power_level
+        default: 0.0
+    house_6_12_rt_power:
+        topic: house_6_12/house_6_12_rt_power
+        default: 0.0
+    house_7_1_bidding_curves_pistar:
+        topic: house_7_1/house_7_1_bidding_curves_pistar
+        default: 0.0
+    house_7_1_power_level:
+        topic: house_7_1/house_7_1_power_level
+        default: 0.0
+    house_7_1_rt_power:
+        topic: house_7_1/house_7_1_rt_power
+        default: 0.0
+    house_7_2_bidding_curves_pistar:
+        topic: house_7_2/house_7_2_bidding_curves_pistar
+        default: 0.0
+    house_7_2_power_level:
+        topic: house_7_2/house_7_2_power_level
+        default: 0.0
+    house_7_2_rt_power:
+        topic: house_7_2/house_7_2_rt_power
+        default: 0.0
+    house_7_3_bidding_curves_pistar:
+        topic: house_7_3/house_7_3_bidding_curves_pistar
+        default: 0.0
+    house_7_3_power_level:
+        topic: house_7_3/house_7_3_power_level
+        default: 0.0
+    house_7_3_rt_power:
+        topic: house_7_3/house_7_3_rt_power
+        default: 0.0
+    house_7_4_bidding_curves_pistar:
+        topic: house_7_4/house_7_4_bidding_curves_pistar
+        default: 0.0
+    house_7_4_power_level:
+        topic: house_7_4/house_7_4_power_level
+        default: 0.0
+    house_7_4_rt_power:
+        topic: house_7_4/house_7_4_rt_power
+        default: 0.0
+    house_7_5_bidding_curves_pistar:
+        topic: house_7_5/house_7_5_bidding_curves_pistar
+        default: 0.0
+    house_7_5_power_level:
+        topic: house_7_5/house_7_5_power_level
+        default: 0.0
+    house_7_5_rt_power:
+        topic: house_7_5/house_7_5_rt_power
+        default: 0.0
+    house_7_6_bidding_curves_pistar:
+        topic: house_7_6/house_7_6_bidding_curves_pistar
+        default: 0.0
+    house_7_6_power_level:
+        topic: house_7_6/house_7_6_power_level
+        default: 0.0
+    house_7_6_rt_power:
+        topic: house_7_6/house_7_6_rt_power
+        default: 0.0
+    house_7_7_bidding_curves_pistar:
+        topic: house_7_7/house_7_7_bidding_curves_pistar
+        default: 0.0
+    house_7_7_power_level:
+        topic: house_7_7/house_7_7_power_level
+        default: 0.0
+    house_7_7_rt_power:
+        topic: house_7_7/house_7_7_rt_power
+        default: 0.0
+    house_7_8_bidding_curves_pistar:
+        topic: house_7_8/house_7_8_bidding_curves_pistar
+        default: 0.0
+    house_7_8_power_level:
+        topic: house_7_8/house_7_8_power_level
+        default: 0.0
+    house_7_8_rt_power:
+        topic: house_7_8/house_7_8_rt_power
+        default: 0.0
+    house_7_9_bidding_curves_pistar:
+        topic: house_7_9/house_7_9_bidding_curves_pistar
+        default: 0.0
+    house_7_9_power_level:
+        topic: house_7_9/house_7_9_power_level
+        default: 0.0
+    house_7_9_rt_power:
+        topic: house_7_9/house_7_9_rt_power
+        default: 0.0
+    house_7_10_bidding_curves_pistar:
+        topic: house_7_10/house_7_10_bidding_curves_pistar
+        default: 0.0
+    house_7_10_power_level:
+        topic: house_7_10/house_7_10_power_level
+        default: 0.0
+    house_7_10_rt_power:
+        topic: house_7_10/house_7_10_rt_power
+        default: 0.0
+    house_7_11_bidding_curves_pistar:
+        topic: house_7_11/house_7_11_bidding_curves_pistar
+        default: 0.0
+    house_7_11_power_level:
+        topic: house_7_11/house_7_11_power_level
+        default: 0.0
+    house_7_11_rt_power:
+        topic: house_7_11/house_7_11_rt_power
+        default: 0.0
+    house_7_12_bidding_curves_pistar:
+        topic: house_7_12/house_7_12_bidding_curves_pistar
+        default: 0.0
+    house_7_12_power_level:
+        topic: house_7_12/house_7_12_power_level
+        default: 0.0
+    house_7_12_rt_power:
+        topic: house_7_12/house_7_12_rt_power
+        default: 0.0
+    house_8_1_bidding_curves_pistar:
+        topic: house_8_1/house_8_1_bidding_curves_pistar
+        default: 0.0
+    house_8_1_power_level:
+        topic: house_8_1/house_8_1_power_level
+        default: 0.0
+    house_8_1_rt_power:
+        topic: house_8_1/house_8_1_rt_power
+        default: 0.0
+    house_8_2_bidding_curves_pistar:
+        topic: house_8_2/house_8_2_bidding_curves_pistar
+        default: 0.0
+    house_8_2_power_level:
+        topic: house_8_2/house_8_2_power_level
+        default: 0.0
+    house_8_2_rt_power:
+        topic: house_8_2/house_8_2_rt_power
+        default: 0.0
+    house_8_3_bidding_curves_pistar:
+        topic: house_8_3/house_8_3_bidding_curves_pistar
+        default: 0.0
+    house_8_3_power_level:
+        topic: house_8_3/house_8_3_power_level
+        default: 0.0
+    house_8_3_rt_power:
+        topic: house_8_3/house_8_3_rt_power
+        default: 0.0
+    house_8_4_bidding_curves_pistar:
+        topic: house_8_4/house_8_4_bidding_curves_pistar
+        default: 0.0
+    house_8_4_power_level:
+        topic: house_8_4/house_8_4_power_level
+        default: 0.0
+    house_8_4_rt_power:
+        topic: house_8_4/house_8_4_rt_power
+        default: 0.0
+    house_8_5_bidding_curves_pistar:
+        topic: house_8_5/house_8_5_bidding_curves_pistar
+        default: 0.0
+    house_8_5_power_level:
+        topic: house_8_5/house_8_5_power_level
+        default: 0.0
+    house_8_5_rt_power:
+        topic: house_8_5/house_8_5_rt_power
+        default: 0.0
+    house_8_6_bidding_curves_pistar:
+        topic: house_8_6/house_8_6_bidding_curves_pistar
+        default: 0.0
+    house_8_6_power_level:
+        topic: house_8_6/house_8_6_power_level
+        default: 0.0
+    house_8_6_rt_power:
+        topic: house_8_6/house_8_6_rt_power
+        default: 0.0
+    house_8_7_bidding_curves_pistar:
+        topic: house_8_7/house_8_7_bidding_curves_pistar
+        default: 0.0
+    house_8_7_power_level:
+        topic: house_8_7/house_8_7_power_level
+        default: 0.0
+    house_8_7_rt_power:
+        topic: house_8_7/house_8_7_rt_power
+        default: 0.0
+    house_8_8_bidding_curves_pistar:
+        topic: house_8_8/house_8_8_bidding_curves_pistar
+        default: 0.0
+    house_8_8_power_level:
+        topic: house_8_8/house_8_8_power_level
+        default: 0.0
+    house_8_8_rt_power:
+        topic: house_8_8/house_8_8_rt_power
+        default: 0.0
+    house_8_9_bidding_curves_pistar:
+        topic: house_8_9/house_8_9_bidding_curves_pistar
+        default: 0.0
+    house_8_9_power_level:
+        topic: house_8_9/house_8_9_power_level
+        default: 0.0
+    house_8_9_rt_power:
+        topic: house_8_9/house_8_9_rt_power
+        default: 0.0
+    house_8_10_bidding_curves_pistar:
+        topic: house_8_10/house_8_10_bidding_curves_pistar
+        default: 0.0
+    house_8_10_power_level:
+        topic: house_8_10/house_8_10_power_level
+        default: 0.0
+    house_8_10_rt_power:
+        topic: house_8_10/house_8_10_rt_power
+        default: 0.0
+    house_8_11_bidding_curves_pistar:
+        topic: house_8_11/house_8_11_bidding_curves_pistar
+        default: 0.0
+    house_8_11_power_level:
+        topic: house_8_11/house_8_11_power_level
+        default: 0.0
+    house_8_11_rt_power:
+        topic: house_8_11/house_8_11_rt_power
+        default: 0.0
+    house_8_12_bidding_curves_pistar:
+        topic: house_8_12/house_8_12_bidding_curves_pistar
+        default: 0.0
+    house_8_12_power_level:
+        topic: house_8_12/house_8_12_power_level
+        default: 0.0
+    house_8_12_rt_power:
+        topic: house_8_12/house_8_12_rt_power
+        default: 0.0
+    house_9_1_bidding_curves_pistar:
+        topic: house_9_1/house_9_1_bidding_curves_pistar
+        default: 0.0
+    house_9_1_power_level:
+        topic: house_9_1/house_9_1_power_level
+        default: 0.0
+    house_9_1_rt_power:
+        topic: house_9_1/house_9_1_rt_power
+        default: 0.0
+    house_9_2_bidding_curves_pistar:
+        topic: house_9_2/house_9_2_bidding_curves_pistar
+        default: 0.0
+    house_9_2_power_level:
+        topic: house_9_2/house_9_2_power_level
+        default: 0.0
+    house_9_2_rt_power:
+        topic: house_9_2/house_9_2_rt_power
+        default: 0.0
+    house_9_3_bidding_curves_pistar:
+        topic: house_9_3/house_9_3_bidding_curves_pistar
+        default: 0.0
+    house_9_3_power_level:
+        topic: house_9_3/house_9_3_power_level
+        default: 0.0
+    house_9_3_rt_power:
+        topic: house_9_3/house_9_3_rt_power
+        default: 0.0
+    house_9_4_bidding_curves_pistar:
+        topic: house_9_4/house_9_4_bidding_curves_pistar
+        default: 0.0
+    house_9_4_power_level:
+        topic: house_9_4/house_9_4_power_level
+        default: 0.0
+    house_9_4_rt_power:
+        topic: house_9_4/house_9_4_rt_power
+        default: 0.0
+    house_9_5_bidding_curves_pistar:
+        topic: house_9_5/house_9_5_bidding_curves_pistar
+        default: 0.0
+    house_9_5_power_level:
+        topic: house_9_5/house_9_5_power_level
+        default: 0.0
+    house_9_5_rt_power:
+        topic: house_9_5/house_9_5_rt_power
+        default: 0.0
+    house_9_6_bidding_curves_pistar:
+        topic: house_9_6/house_9_6_bidding_curves_pistar
+        default: 0.0
+    house_9_6_power_level:
+        topic: house_9_6/house_9_6_power_level
+        default: 0.0
+    house_9_6_rt_power:
+        topic: house_9_6/house_9_6_rt_power
+        default: 0.0
+    house_9_7_bidding_curves_pistar:
+        topic: house_9_7/house_9_7_bidding_curves_pistar
+        default: 0.0
+    house_9_7_power_level:
+        topic: house_9_7/house_9_7_power_level
+        default: 0.0
+    house_9_7_rt_power:
+        topic: house_9_7/house_9_7_rt_power
+        default: 0.0
+    house_9_8_bidding_curves_pistar:
+        topic: house_9_8/house_9_8_bidding_curves_pistar
+        default: 0.0
+    house_9_8_power_level:
+        topic: house_9_8/house_9_8_power_level
+        default: 0.0
+    house_9_8_rt_power:
+        topic: house_9_8/house_9_8_rt_power
+        default: 0.0
+    house_9_9_bidding_curves_pistar:
+        topic: house_9_9/house_9_9_bidding_curves_pistar
+        default: 0.0
+    house_9_9_power_level:
+        topic: house_9_9/house_9_9_power_level
+        default: 0.0
+    house_9_9_rt_power:
+        topic: house_9_9/house_9_9_rt_power
+        default: 0.0
+    house_9_10_bidding_curves_pistar:
+        topic: house_9_10/house_9_10_bidding_curves_pistar
+        default: 0.0
+    house_9_10_power_level:
+        topic: house_9_10/house_9_10_power_level
+        default: 0.0
+    house_9_10_rt_power:
+        topic: house_9_10/house_9_10_rt_power
+        default: 0.0
+    house_9_11_bidding_curves_pistar:
+        topic: house_9_11/house_9_11_bidding_curves_pistar
+        default: 0.0
+    house_9_11_power_level:
+        topic: house_9_11/house_9_11_power_level
+        default: 0.0
+    house_9_11_rt_power:
+        topic: house_9_11/house_9_11_rt_power
+        default: 0.0
+    house_9_12_bidding_curves_pistar:
+        topic: house_9_12/house_9_12_bidding_curves_pistar
+        default: 0.0
+    house_9_12_power_level:
+        topic: house_9_12/house_9_12_power_level
+        default: 0.0
+    house_9_12_rt_power:
+        topic: house_9_12/house_9_12_rt_power
+        default: 0.0
+    house_10_1_bidding_curves_pistar:
+        topic: house_10_1/house_10_1_bidding_curves_pistar
+        default: 0.0
+    house_10_1_power_level:
+        topic: house_10_1/house_10_1_power_level
+        default: 0.0
+    house_10_1_rt_power:
+        topic: house_10_1/house_10_1_rt_power
+        default: 0.0
+    house_10_2_bidding_curves_pistar:
+        topic: house_10_2/house_10_2_bidding_curves_pistar
+        default: 0.0
+    house_10_2_power_level:
+        topic: house_10_2/house_10_2_power_level
+        default: 0.0
+    house_10_2_rt_power:
+        topic: house_10_2/house_10_2_rt_power
+        default: 0.0
+    house_10_3_bidding_curves_pistar:
+        topic: house_10_3/house_10_3_bidding_curves_pistar
+        default: 0.0
+    house_10_3_power_level:
+        topic: house_10_3/house_10_3_power_level
+        default: 0.0
+    house_10_3_rt_power:
+        topic: house_10_3/house_10_3_rt_power
+        default: 0.0
+    house_10_4_bidding_curves_pistar:
+        topic: house_10_4/house_10_4_bidding_curves_pistar
+        default: 0.0
+    house_10_4_power_level:
+        topic: house_10_4/house_10_4_power_level
+        default: 0.0
+    house_10_4_rt_power:
+        topic: house_10_4/house_10_4_rt_power
+        default: 0.0
+    house_10_5_bidding_curves_pistar:
+        topic: house_10_5/house_10_5_bidding_curves_pistar
+        default: 0.0
+    house_10_5_power_level:
+        topic: house_10_5/house_10_5_power_level
+        default: 0.0
+    house_10_5_rt_power:
+        topic: house_10_5/house_10_5_rt_power
+        default: 0.0
+    house_10_6_bidding_curves_pistar:
+        topic: house_10_6/house_10_6_bidding_curves_pistar
+        default: 0.0
+    house_10_6_power_level:
+        topic: house_10_6/house_10_6_power_level
+        default: 0.0
+    house_10_6_rt_power:
+        topic: house_10_6/house_10_6_rt_power
+        default: 0.0
+    house_10_7_bidding_curves_pistar:
+        topic: house_10_7/house_10_7_bidding_curves_pistar
+        default: 0.0
+    house_10_7_power_level:
+        topic: house_10_7/house_10_7_power_level
+        default: 0.0
+    house_10_7_rt_power:
+        topic: house_10_7/house_10_7_rt_power
+        default: 0.0
+    house_10_8_bidding_curves_pistar:
+        topic: house_10_8/house_10_8_bidding_curves_pistar
+        default: 0.0
+    house_10_8_power_level:
+        topic: house_10_8/house_10_8_power_level
+        default: 0.0
+    house_10_8_rt_power:
+        topic: house_10_8/house_10_8_rt_power
+        default: 0.0
+    house_10_9_bidding_curves_pistar:
+        topic: house_10_9/house_10_9_bidding_curves_pistar
+        default: 0.0
+    house_10_9_power_level:
+        topic: house_10_9/house_10_9_power_level
+        default: 0.0
+    house_10_9_rt_power:
+        topic: house_10_9/house_10_9_rt_power
+        default: 0.0
+    house_10_10_bidding_curves_pistar:
+        topic: house_10_10/house_10_10_bidding_curves_pistar
+        default: 0.0
+    house_10_10_power_level:
+        topic: house_10_10/house_10_10_power_level
+        default: 0.0
+    house_10_10_rt_power:
+        topic: house_10_10/house_10_10_rt_power
+        default: 0.0
+    house_10_11_bidding_curves_pistar:
+        topic: house_10_11/house_10_11_bidding_curves_pistar
+        default: 0.0
+    house_10_11_power_level:
+        topic: house_10_11/house_10_11_power_level
+        default: 0.0
+    house_10_11_rt_power:
+        topic: house_10_11/house_10_11_rt_power
+        default: 0.0
+    house_10_12_bidding_curves_pistar:
+        topic: house_10_12/house_10_12_bidding_curves_pistar
+        default: 0.0
+    house_10_12_power_level:
+        topic: house_10_12/house_10_12_power_level
+        default: 0.0
+    house_10_12_rt_power:
+        topic: house_10_12/house_10_12_rt_power
+        default: 0.0
+    house_11_1_bidding_curves_pistar:
+        topic: house_11_1/house_11_1_bidding_curves_pistar
+        default: 0.0
+    house_11_1_power_level:
+        topic: house_11_1/house_11_1_power_level
+        default: 0.0
+    house_11_1_rt_power:
+        topic: house_11_1/house_11_1_rt_power
+        default: 0.0
+    house_11_2_bidding_curves_pistar:
+        topic: house_11_2/house_11_2_bidding_curves_pistar
+        default: 0.0
+    house_11_2_power_level:
+        topic: house_11_2/house_11_2_power_level
+        default: 0.0
+    house_11_2_rt_power:
+        topic: house_11_2/house_11_2_rt_power
+        default: 0.0
+    house_11_3_bidding_curves_pistar:
+        topic: house_11_3/house_11_3_bidding_curves_pistar
+        default: 0.0
+    house_11_3_power_level:
+        topic: house_11_3/house_11_3_power_level
+        default: 0.0
+    house_11_3_rt_power:
+        topic: house_11_3/house_11_3_rt_power
+        default: 0.0
+    house_11_4_bidding_curves_pistar:
+        topic: house_11_4/house_11_4_bidding_curves_pistar
+        default: 0.0
+    house_11_4_power_level:
+        topic: house_11_4/house_11_4_power_level
+        default: 0.0
+    house_11_4_rt_power:
+        topic: house_11_4/house_11_4_rt_power
+        default: 0.0
+    house_11_5_bidding_curves_pistar:
+        topic: house_11_5/house_11_5_bidding_curves_pistar
+        default: 0.0
+    house_11_5_power_level:
+        topic: house_11_5/house_11_5_power_level
+        default: 0.0
+    house_11_5_rt_power:
+        topic: house_11_5/house_11_5_rt_power
+        default: 0.0
+    house_11_6_bidding_curves_pistar:
+        topic: house_11_6/house_11_6_bidding_curves_pistar
+        default: 0.0
+    house_11_6_power_level:
+        topic: house_11_6/house_11_6_power_level
+        default: 0.0
+    house_11_6_rt_power:
+        topic: house_11_6/house_11_6_rt_power
+        default: 0.0
+    house_11_7_bidding_curves_pistar:
+        topic: house_11_7/house_11_7_bidding_curves_pistar
+        default: 0.0
+    house_11_7_power_level:
+        topic: house_11_7/house_11_7_power_level
+        default: 0.0
+    house_11_7_rt_power:
+        topic: house_11_7/house_11_7_rt_power
+        default: 0.0
+    house_11_8_bidding_curves_pistar:
+        topic: house_11_8/house_11_8_bidding_curves_pistar
+        default: 0.0
+    house_11_8_power_level:
+        topic: house_11_8/house_11_8_power_level
+        default: 0.0
+    house_11_8_rt_power:
+        topic: house_11_8/house_11_8_rt_power
+        default: 0.0
+    house_11_9_bidding_curves_pistar:
+        topic: house_11_9/house_11_9_bidding_curves_pistar
+        default: 0.0
+    house_11_9_power_level:
+        topic: house_11_9/house_11_9_power_level
+        default: 0.0
+    house_11_9_rt_power:
+        topic: house_11_9/house_11_9_rt_power
+        default: 0.0
+    house_11_10_bidding_curves_pistar:
+        topic: house_11_10/house_11_10_bidding_curves_pistar
+        default: 0.0
+    house_11_10_power_level:
+        topic: house_11_10/house_11_10_power_level
+        default: 0.0
+    house_11_10_rt_power:
+        topic: house_11_10/house_11_10_rt_power
+        default: 0.0
+    house_11_11_bidding_curves_pistar:
+        topic: house_11_11/house_11_11_bidding_curves_pistar
+        default: 0.0
+    house_11_11_power_level:
+        topic: house_11_11/house_11_11_power_level
+        default: 0.0
+    house_11_11_rt_power:
+        topic: house_11_11/house_11_11_rt_power
+        default: 0.0
+    house_11_12_bidding_curves_pistar:
+        topic: house_11_12/house_11_12_bidding_curves_pistar
+        default: 0.0
+    house_11_12_power_level:
+        topic: house_11_12/house_11_12_power_level
+        default: 0.0
+    house_11_12_rt_power:
+        topic: house_11_12/house_11_12_rt_power
+        default: 0.0
+    house_12_1_bidding_curves_pistar:
+        topic: house_12_1/house_12_1_bidding_curves_pistar
+        default: 0.0
+    house_12_1_power_level:
+        topic: house_12_1/house_12_1_power_level
+        default: 0.0
+    house_12_1_rt_power:
+        topic: house_12_1/house_12_1_rt_power
+        default: 0.0
+    house_12_2_bidding_curves_pistar:
+        topic: house_12_2/house_12_2_bidding_curves_pistar
+        default: 0.0
+    house_12_2_power_level:
+        topic: house_12_2/house_12_2_power_level
+        default: 0.0
+    house_12_2_rt_power:
+        topic: house_12_2/house_12_2_rt_power
+        default: 0.0
+    house_12_3_bidding_curves_pistar:
+        topic: house_12_3/house_12_3_bidding_curves_pistar
+        default: 0.0
+    house_12_3_power_level:
+        topic: house_12_3/house_12_3_power_level
+        default: 0.0
+    house_12_3_rt_power:
+        topic: house_12_3/house_12_3_rt_power
+        default: 0.0
+    house_12_4_bidding_curves_pistar:
+        topic: house_12_4/house_12_4_bidding_curves_pistar
+        default: 0.0
+    house_12_4_power_level:
+        topic: house_12_4/house_12_4_power_level
+        default: 0.0
+    house_12_4_rt_power:
+        topic: house_12_4/house_12_4_rt_power
+        default: 0.0
+    house_12_5_bidding_curves_pistar:
+        topic: house_12_5/house_12_5_bidding_curves_pistar
+        default: 0.0
+    house_12_5_power_level:
+        topic: house_12_5/house_12_5_power_level
+        default: 0.0
+    house_12_5_rt_power:
+        topic: house_12_5/house_12_5_rt_power
+        default: 0.0
+    house_12_6_bidding_curves_pistar:
+        topic: house_12_6/house_12_6_bidding_curves_pistar
+        default: 0.0
+    house_12_6_power_level:
+        topic: house_12_6/house_12_6_power_level
+        default: 0.0
+    house_12_6_rt_power:
+        topic: house_12_6/house_12_6_rt_power
+        default: 0.0
+    house_12_7_bidding_curves_pistar:
+        topic: house_12_7/house_12_7_bidding_curves_pistar
+        default: 0.0
+    house_12_7_power_level:
+        topic: house_12_7/house_12_7_power_level
+        default: 0.0
+    house_12_7_rt_power:
+        topic: house_12_7/house_12_7_rt_power
+        default: 0.0
+    house_12_8_bidding_curves_pistar:
+        topic: house_12_8/house_12_8_bidding_curves_pistar
+        default: 0.0
+    house_12_8_power_level:
+        topic: house_12_8/house_12_8_power_level
+        default: 0.0
+    house_12_8_rt_power:
+        topic: house_12_8/house_12_8_rt_power
+        default: 0.0
+    house_12_9_bidding_curves_pistar:
+        topic: house_12_9/house_12_9_bidding_curves_pistar
+        default: 0.0
+    house_12_9_power_level:
+        topic: house_12_9/house_12_9_power_level
+        default: 0.0
+    house_12_9_rt_power:
+        topic: house_12_9/house_12_9_rt_power
+        default: 0.0
+    house_12_10_bidding_curves_pistar:
+        topic: house_12_10/house_12_10_bidding_curves_pistar
+        default: 0.0
+    house_12_10_power_level:
+        topic: house_12_10/house_12_10_power_level
+        default: 0.0
+    house_12_10_rt_power:
+        topic: house_12_10/house_12_10_rt_power
+        default: 0.0
+    house_12_11_bidding_curves_pistar:
+        topic: house_12_11/house_12_11_bidding_curves_pistar
+        default: 0.0
+    house_12_11_power_level:
+        topic: house_12_11/house_12_11_power_level
+        default: 0.0
+    house_12_11_rt_power:
+        topic: house_12_11/house_12_11_rt_power
+        default: 0.0
+    house_12_12_bidding_curves_pistar:
+        topic: house_12_12/house_12_12_bidding_curves_pistar
+        default: 0.0
+    house_12_12_power_level:
+        topic: house_12_12/house_12_12_power_level
+        default: 0.0
+    house_12_12_rt_power:
+        topic: house_12_12/house_12_12_rt_power
+        default: 0.0
+    house_13_1_bidding_curves_pistar:
+        topic: house_13_1/house_13_1_bidding_curves_pistar
+        default: 0.0
+    house_13_1_power_level:
+        topic: house_13_1/house_13_1_power_level
+        default: 0.0
+    house_13_1_rt_power:
+        topic: house_13_1/house_13_1_rt_power
+        default: 0.0
+    house_13_2_bidding_curves_pistar:
+        topic: house_13_2/house_13_2_bidding_curves_pistar
+        default: 0.0
+    house_13_2_power_level:
+        topic: house_13_2/house_13_2_power_level
+        default: 0.0
+    house_13_2_rt_power:
+        topic: house_13_2/house_13_2_rt_power
+        default: 0.0
+    house_13_3_bidding_curves_pistar:
+        topic: house_13_3/house_13_3_bidding_curves_pistar
+        default: 0.0
+    house_13_3_power_level:
+        topic: house_13_3/house_13_3_power_level
+        default: 0.0
+    house_13_3_rt_power:
+        topic: house_13_3/house_13_3_rt_power
+        default: 0.0
+    house_13_4_bidding_curves_pistar:
+        topic: house_13_4/house_13_4_bidding_curves_pistar
+        default: 0.0
+    house_13_4_power_level:
+        topic: house_13_4/house_13_4_power_level
+        default: 0.0
+    house_13_4_rt_power:
+        topic: house_13_4/house_13_4_rt_power
+        default: 0.0
+    house_13_5_bidding_curves_pistar:
+        topic: house_13_5/house_13_5_bidding_curves_pistar
+        default: 0.0
+    house_13_5_power_level:
+        topic: house_13_5/house_13_5_power_level
+        default: 0.0
+    house_13_5_rt_power:
+        topic: house_13_5/house_13_5_rt_power
+        default: 0.0
+    house_13_6_bidding_curves_pistar:
+        topic: house_13_6/house_13_6_bidding_curves_pistar
+        default: 0.0
+    house_13_6_power_level:
+        topic: house_13_6/house_13_6_power_level
+        default: 0.0
+    house_13_6_rt_power:
+        topic: house_13_6/house_13_6_rt_power
+        default: 0.0
+    house_13_7_bidding_curves_pistar:
+        topic: house_13_7/house_13_7_bidding_curves_pistar
+        default: 0.0
+    house_13_7_power_level:
+        topic: house_13_7/house_13_7_power_level
+        default: 0.0
+    house_13_7_rt_power:
+        topic: house_13_7/house_13_7_rt_power
+        default: 0.0
+    house_13_8_bidding_curves_pistar:
+        topic: house_13_8/house_13_8_bidding_curves_pistar
+        default: 0.0
+    house_13_8_power_level:
+        topic: house_13_8/house_13_8_power_level
+        default: 0.0
+    house_13_8_rt_power:
+        topic: house_13_8/house_13_8_rt_power
+        default: 0.0
+    house_13_9_bidding_curves_pistar:
+        topic: house_13_9/house_13_9_bidding_curves_pistar
+        default: 0.0
+    house_13_9_power_level:
+        topic: house_13_9/house_13_9_power_level
+        default: 0.0
+    house_13_9_rt_power:
+        topic: house_13_9/house_13_9_rt_power
+        default: 0.0
+    house_13_10_bidding_curves_pistar:
+        topic: house_13_10/house_13_10_bidding_curves_pistar
+        default: 0.0
+    house_13_10_power_level:
+        topic: house_13_10/house_13_10_power_level
+        default: 0.0
+    house_13_10_rt_power:
+        topic: house_13_10/house_13_10_rt_power
+        default: 0.0
+    house_13_11_bidding_curves_pistar:
+        topic: house_13_11/house_13_11_bidding_curves_pistar
+        default: 0.0
+    house_13_11_power_level:
+        topic: house_13_11/house_13_11_power_level
+        default: 0.0
+    house_13_11_rt_power:
+        topic: house_13_11/house_13_11_rt_power
+        default: 0.0
+    house_13_12_bidding_curves_pistar:
+        topic: house_13_12/house_13_12_bidding_curves_pistar
+        default: 0.0
+    house_13_12_power_level:
+        topic: house_13_12/house_13_12_power_level
+        default: 0.0
+    house_13_12_rt_power:
+        topic: house_13_12/house_13_12_rt_power
+        default: 0.0
+    house_14_1_bidding_curves_pistar:
+        topic: house_14_1/house_14_1_bidding_curves_pistar
+        default: 0.0
+    house_14_1_power_level:
+        topic: house_14_1/house_14_1_power_level
+        default: 0.0
+    house_14_1_rt_power:
+        topic: house_14_1/house_14_1_rt_power
+        default: 0.0
+    house_14_2_bidding_curves_pistar:
+        topic: house_14_2/house_14_2_bidding_curves_pistar
+        default: 0.0
+    house_14_2_power_level:
+        topic: house_14_2/house_14_2_power_level
+        default: 0.0
+    house_14_2_rt_power:
+        topic: house_14_2/house_14_2_rt_power
+        default: 0.0
+    house_14_3_bidding_curves_pistar:
+        topic: house_14_3/house_14_3_bidding_curves_pistar
+        default: 0.0
+    house_14_3_power_level:
+        topic: house_14_3/house_14_3_power_level
+        default: 0.0
+    house_14_3_rt_power:
+        topic: house_14_3/house_14_3_rt_power
+        default: 0.0
+    house_14_4_bidding_curves_pistar:
+        topic: house_14_4/house_14_4_bidding_curves_pistar
+        default: 0.0
+    house_14_4_power_level:
+        topic: house_14_4/house_14_4_power_level
+        default: 0.0
+    house_14_4_rt_power:
+        topic: house_14_4/house_14_4_rt_power
+        default: 0.0
+    house_14_5_bidding_curves_pistar:
+        topic: house_14_5/house_14_5_bidding_curves_pistar
+        default: 0.0
+    house_14_5_power_level:
+        topic: house_14_5/house_14_5_power_level
+        default: 0.0
+    house_14_5_rt_power:
+        topic: house_14_5/house_14_5_rt_power
+        default: 0.0
+    house_14_6_bidding_curves_pistar:
+        topic: house_14_6/house_14_6_bidding_curves_pistar
+        default: 0.0
+    house_14_6_power_level:
+        topic: house_14_6/house_14_6_power_level
+        default: 0.0
+    house_14_6_rt_power:
+        topic: house_14_6/house_14_6_rt_power
+        default: 0.0
+    house_14_7_bidding_curves_pistar:
+        topic: house_14_7/house_14_7_bidding_curves_pistar
+        default: 0.0
+    house_14_7_power_level:
+        topic: house_14_7/house_14_7_power_level
+        default: 0.0
+    house_14_7_rt_power:
+        topic: house_14_7/house_14_7_rt_power
+        default: 0.0
+    house_14_8_bidding_curves_pistar:
+        topic: house_14_8/house_14_8_bidding_curves_pistar
+        default: 0.0
+    house_14_8_power_level:
+        topic: house_14_8/house_14_8_power_level
+        default: 0.0
+    house_14_8_rt_power:
+        topic: house_14_8/house_14_8_rt_power
+        default: 0.0
+    house_14_9_bidding_curves_pistar:
+        topic: house_14_9/house_14_9_bidding_curves_pistar
+        default: 0.0
+    house_14_9_power_level:
+        topic: house_14_9/house_14_9_power_level
+        default: 0.0
+    house_14_9_rt_power:
+        topic: house_14_9/house_14_9_rt_power
+        default: 0.0
+    house_14_10_bidding_curves_pistar:
+        topic: house_14_10/house_14_10_bidding_curves_pistar
+        default: 0.0
+    house_14_10_power_level:
+        topic: house_14_10/house_14_10_power_level
+        default: 0.0
+    house_14_10_rt_power:
+        topic: house_14_10/house_14_10_rt_power
+        default: 0.0
+    house_14_11_bidding_curves_pistar:
+        topic: house_14_11/house_14_11_bidding_curves_pistar
+        default: 0.0
+    house_14_11_power_level:
+        topic: house_14_11/house_14_11_power_level
+        default: 0.0
+    house_14_11_rt_power:
+        topic: house_14_11/house_14_11_rt_power
+        default: 0.0
+    house_14_12_bidding_curves_pistar:
+        topic: house_14_12/house_14_12_bidding_curves_pistar
+        default: 0.0
+    house_14_12_power_level:
+        topic: house_14_12/house_14_12_power_level
+        default: 0.0
+    house_14_12_rt_power:
+        topic: house_14_12/house_14_12_rt_power
+        default: 0.0
+    house_15_1_bidding_curves_pistar:
+        topic: house_15_1/house_15_1_bidding_curves_pistar
+        default: 0.0
+    house_15_1_power_level:
+        topic: house_15_1/house_15_1_power_level
+        default: 0.0
+    house_15_1_rt_power:
+        topic: house_15_1/house_15_1_rt_power
+        default: 0.0
+    house_15_2_bidding_curves_pistar:
+        topic: house_15_2/house_15_2_bidding_curves_pistar
+        default: 0.0
+    house_15_2_power_level:
+        topic: house_15_2/house_15_2_power_level
+        default: 0.0
+    house_15_2_rt_power:
+        topic: house_15_2/house_15_2_rt_power
+        default: 0.0
+    house_15_3_bidding_curves_pistar:
+        topic: house_15_3/house_15_3_bidding_curves_pistar
+        default: 0.0
+    house_15_3_power_level:
+        topic: house_15_3/house_15_3_power_level
+        default: 0.0
+    house_15_3_rt_power:
+        topic: house_15_3/house_15_3_rt_power
+        default: 0.0
+    house_15_4_bidding_curves_pistar:
+        topic: house_15_4/house_15_4_bidding_curves_pistar
+        default: 0.0
+    house_15_4_power_level:
+        topic: house_15_4/house_15_4_power_level
+        default: 0.0
+    house_15_4_rt_power:
+        topic: house_15_4/house_15_4_rt_power
+        default: 0.0
+    house_15_5_bidding_curves_pistar:
+        topic: house_15_5/house_15_5_bidding_curves_pistar
+        default: 0.0
+    house_15_5_power_level:
+        topic: house_15_5/house_15_5_power_level
+        default: 0.0
+    house_15_5_rt_power:
+        topic: house_15_5/house_15_5_rt_power
+        default: 0.0
+    house_15_6_bidding_curves_pistar:
+        topic: house_15_6/house_15_6_bidding_curves_pistar
+        default: 0.0
+    house_15_6_power_level:
+        topic: house_15_6/house_15_6_power_level
+        default: 0.0
+    house_15_6_rt_power:
+        topic: house_15_6/house_15_6_rt_power
+        default: 0.0
+    house_15_7_bidding_curves_pistar:
+        topic: house_15_7/house_15_7_bidding_curves_pistar
+        default: 0.0
+    house_15_7_power_level:
+        topic: house_15_7/house_15_7_power_level
+        default: 0.0
+    house_15_7_rt_power:
+        topic: house_15_7/house_15_7_rt_power
+        default: 0.0
+    house_15_8_bidding_curves_pistar:
+        topic: house_15_8/house_15_8_bidding_curves_pistar
+        default: 0.0
+    house_15_8_power_level:
+        topic: house_15_8/house_15_8_power_level
+        default: 0.0
+    house_15_8_rt_power:
+        topic: house_15_8/house_15_8_rt_power
+        default: 0.0
+    house_15_9_bidding_curves_pistar:
+        topic: house_15_9/house_15_9_bidding_curves_pistar
+        default: 0.0
+    house_15_9_power_level:
+        topic: house_15_9/house_15_9_power_level
+        default: 0.0
+    house_15_9_rt_power:
+        topic: house_15_9/house_15_9_rt_power
+        default: 0.0
+    house_15_10_bidding_curves_pistar:
+        topic: house_15_10/house_15_10_bidding_curves_pistar
+        default: 0.0
+    house_15_10_power_level:
+        topic: house_15_10/house_15_10_power_level
+        default: 0.0
+    house_15_10_rt_power:
+        topic: house_15_10/house_15_10_rt_power
+        default: 0.0
+    house_15_11_bidding_curves_pistar:
+        topic: house_15_11/house_15_11_bidding_curves_pistar
+        default: 0.0
+    house_15_11_power_level:
+        topic: house_15_11/house_15_11_power_level
+        default: 0.0
+    house_15_11_rt_power:
+        topic: house_15_11/house_15_11_rt_power
+        default: 0.0
+    house_15_12_bidding_curves_pistar:
+        topic: house_15_12/house_15_12_bidding_curves_pistar
+        default: 0.0
+    house_15_12_power_level:
+        topic: house_15_12/house_15_12_power_level
+        default: 0.0
+    house_15_12_rt_power:
+        topic: house_15_12/house_15_12_rt_power
+        default: 0.0
+ 
+
