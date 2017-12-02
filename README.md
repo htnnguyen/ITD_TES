@@ -17,7 +17,7 @@ The "Version 1" contains a direct load control example where different houses ar
 
 The "Version 2" contains a price based control example where different houses are represented by different processes (house_controller.py +houseID) using PowerMatcher framework. Instead of direct load control signals, the DSO sends price which can adjust the number of HVACs turning on/off. The price is cleared by considering aggregated bids of all HVACs.
 
-The "AMES.zip" contains "ames-3.0" and "Modified_IEEE13_with180houses" folders. The AMES Market Package is the software implementation, in Java/Python, of the AMES Wholesale Power Market Test Bed(Ref: http://www.auswingeorgethomas.com/publications.html). "ames-3.0" in AMES.zip contains JNIfncs functions to communicate with other agents. Modified_IEEE13_with180houses folder contains compile_AMES.bat and runAMES.bat to compile AMES and run the co-simulation. Note: Both the batch files have variables containing location of the root folder.
+The "AMES.zip" contains "ames-3.0" and "Modified_IEEE13_with180houses" folders. The AMES Market Package is the software implementation in Java, of the AMES Wholesale Power Market Test Bed(Ref: http://www.auswingeorgethomas.com/publications.html). "ames-3.0" in AMES.zip contains JNIfncs functions to communicate with other agents. Modified_IEEE13_with180houses folder contains compile_AMES.bat and runAMES.bat to compile AMES and run the co-simulation. Note: Both the batch files have variables containing location of the root folder.
 
 Requirements:
 ANT 1.10.1/Netbeans IDE
