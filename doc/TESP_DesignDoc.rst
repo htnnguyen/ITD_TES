@@ -185,6 +185,6 @@ Figure 10. Simulation Results
 .. |image9| image:: ./media/Initialization.png
    :width: 6.50000in
    :height: 3.16667in  
-.. |image9| image:: ./media/results.png
+.. |image10| image:: ./media/results.png
    :width: 6.50000in
    :height: 3.16667in   
