@@ -126,28 +126,28 @@ List of TES agents and TES designs that we support:
 
 5. ISO-NE wholesale market
 
-.. |logo| image:: ./media/ISO_logo.png
+.. |logo| image:: ./media/media/ISO_logo.png
    :width: 2.0in
    :height: 2.0in
-.. |image2| image:: ./media/ITDTestCaseFeedbackLoop.png
+.. |image2| image:: ./media/media/ITDTestCaseFeedbackLoop.png
    :width: 6.50000in
    :height: 3.16667in
-.. |image3| image:: ./media/ITDTestSystemV3AgentHierarchy.png
+.. |image3| image:: ./media/media/ITDTestSystemV3AgentHierarchy.png
    :width: 6.00000in
    :height: 5.16667in
-.. |image4| image:: ./media/DAMRTMTimingAMESV3.png
+.. |image4| image:: ./media/media/DAMRTMTimingAMESV3.png
    :width: 6.00000in
    :height: 3.75000in
-.. |image1| image:: ./media/ITDTestSystemSchematic.png
+.. |image1| image:: ./media/media/ITDTestSystemSchematic.png
    :width: 6.16667in
    :height: 3.33333in
-.. |image5| image:: ./media/ITDTestSystemV3Components.png
+.. |image5| image:: ./media/media/ITDTestSystemV3Components.png
    :width: 5.75000in
    :height: 2.83333in
-.. |image6| image:: ./media/IEEE13BusGrid.png
+.. |image6| image:: ./media/media/IEEE13BusGrid.png
    :width: 6.00000in
    :height: 6.33333in
-.. |image7| image:: ./media/ITDTestCaseFiveBusGridLSE4.png
+.. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
    :width: 6.00000in
    :height: 5.75000in
 
