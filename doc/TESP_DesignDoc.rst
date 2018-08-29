@@ -4,6 +4,12 @@
 
 ITD TES System 
 ======================================
+[1] Our working paper (https://lib.dr.iastate.edu/econ_workingpapers/41)
+
+[2] ITD Project Site 
+
+ITD TES System 
+======================================
 
 .. sidebar:: This work is done at Iowa State University
 
