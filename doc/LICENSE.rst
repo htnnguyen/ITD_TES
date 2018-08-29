@@ -1,7 +1,7 @@
 ============
 ITD TES System License
 ============
-BSD 3-Clause License 
+BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
