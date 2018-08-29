@@ -55,9 +55,9 @@ source_parsers = {
 master_doc = 'index'
 
 # General information about the project.
-project = 'TESP'
-copyright = '2017-2018, Battelle Memorial Institute'
-author = 'Pacific Northwest National Laboratory'
+project = 'PNNL/Iowa State University: Transactive Energy System Project'
+copyright = 'Iowa State University'
+author = 'Hieu Trung Nguyen, Swathi Battula, Rohit Reddy Takkala, Zhaoyu Wang, Leigh Tesfatsion'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
