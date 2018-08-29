@@ -12,10 +12,3 @@ An Integrated Transmission and Distribution Test System for Evaluation of Transa
 
    TESP_DesignDoc
    LICENSE
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
