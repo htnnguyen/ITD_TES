@@ -169,7 +169,7 @@ Figure 8. Overview of TESagents.py
 .. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
    :width: 6.50000in
    :height: 3.16667in
-.. |image8| image:: ./media/media/TESagents.png
+.. |image8| image:: ./media/TESagent.png
    :width: 6.50000in
    :height: 3.16667in
    
