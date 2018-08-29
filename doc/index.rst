@@ -3,9 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-An Integrated Transmission and Distribution Test
-System for Evaluation of Transactive Energy Designs
-=============================================
+An Integrated Transmission and Distribution Test System for Evaluation of Transactive Energy Designs
+====================================================================================================
 
 .. toctree::
    :maxdepth: 2
