@@ -5,7 +5,7 @@
 ITD TES System 
 ======================================
 
-.. sidebar:: ITD TES System 
+.. sidebar:: This work is done at Iowa State University
 
   |logo|
 
