@@ -184,7 +184,7 @@ Figure 10. Simulation Results
    :height: 3.16667in
 .. |image9| image:: ./media/Initialization.png
    :width: 6.50000in
-   :height: 3.16667in  
+   :height: 1.16667in  
 .. |image10| image:: ./media/results.png
    :width: 6.50000in
-   :height: 3.16667in   
+   :height: 4.16667in   
