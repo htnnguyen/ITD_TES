@@ -2,7 +2,7 @@
    :format: html latex
 ..
 
-ITD TES System 
+References
 ======================================
 [1] Our working paper (https://lib.dr.iastate.edu/econ_workingpapers/41)
 
