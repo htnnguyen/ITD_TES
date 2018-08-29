@@ -2,11 +2,27 @@
    :format: html latex
 ..
 
-References
+Key Links
 ======================================
 [1] Our working paper (https://lib.dr.iastate.edu/econ_workingpapers/41)
 
 [2] ITD Project Site 
+
+Acknowledgement of Support
+======================================
+
+This work has been supported by contract #3390511 with the Pacific Northwest National Laboratory operated for the U.S. Department of Energy under Contract DE-AC65-76RLO1830, and by the U.S. Department of Energy Office of Electricity Delivery and Energy Reliability (DE-OE0000839). 
+
+Code Developers
+======================================
+
+1. Hieu Trung Nguyen (hieutn1223@gmail.com) 
+
+2. Swathi Battula (swathi@iastate.edu)
+
+3. Rohit Reddy Takkala (rohit@iastate.edu)
+
+4. Leigh Tesfatsion (tesfatsi@iastate.edu)
 
 ITD TES System 
 ======================================
