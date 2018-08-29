@@ -59,7 +59,7 @@ taxonomy for this test system is depicted in Figure. 2. Down-pointing arrows
 indicate has a relations, and up-pointing arrows indicate is a relations. Figure 3 and 4 depict key operational aspects of the ITD TES System in the form of flow diagrams, i.e., the daily timing of day-ahead and real-time
 wholesale power market operations and the two-way feedback between transmission and distribution systems.
 
-|image1|
+|image3|
 
 Figure 3. Partial agent hierarchy for the ITD TES System.
 
