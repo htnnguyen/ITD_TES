@@ -14,7 +14,7 @@ This is the source code for an economics working paper Nguyen, Hieu Trung; Battu
 Goals
 -----
 
-We presents an open source agent-based platform specifically tailored to permit careful dynamic performance evaluation of transactive energy system (TES) designs for integrated transmission and distribution (ITD) systems. The platform models a centrally-managed wholesale power market operating over a transmission grid linked to one or more distribution systems,
+We present an open source agent-based platform specifically tailored to permit careful dynamic performance evaluation of transactive energy system (TES) designs for integrated transmission and distribution (ITD) systems. The platform models a centrally-managed wholesale power market operating over a transmission grid linked to one or more distribution systems,
 where each distribution system consists of a collection of distributed energy resources operating over a distribution grid. Test case findings are presented to illustrate the capabilities of the platform. The test cases implement a
 transmission system linked to a distribution system populated by households that have smart price-responsive appliances as well as conventional loads. Transactions at the distribution level are conducted in accordance
 with a bid-based TES design known as the PowerMatcher.
