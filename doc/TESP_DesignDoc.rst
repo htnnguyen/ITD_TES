@@ -126,7 +126,7 @@ List of TES agents and TES designs that we support:
 
 5. ISO-NE wholesale market
 
-.. |logo| image:: ./media/media/ISO_logo.png
+.. |logo| image:: ./media/media/ISU_logo.png
    :width: 2.0in
    :height: 2.0in
 .. |image2| image:: ./media/media/ITDTestCaseFeedbackLoop.png
