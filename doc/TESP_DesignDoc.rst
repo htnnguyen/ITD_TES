@@ -126,6 +126,22 @@ List of TES agents and TES designs that we support:
 
 5. ISO-NE wholesale market
 
+The libary of TESAgents are implemented in TESAgent.py
+--------------------------------------
+The file TESAgent.py inlcudes 4 Classes that are shown in Figure 8:
+
+1. HVAC
+
+2. Waterheater
+
+3. Refrigerator
+
+4. LISA (Local Intelligent Software Agent). LISA represents the Home Energy Management System.
+
+|image8|
+
+Figure 8. Overview of TESagents.py
+
 .. |logo| image:: ./media/media/ISU_logo.png
    :width: 2.0in
    :height: 2.0in
@@ -153,3 +169,8 @@ List of TES agents and TES designs that we support:
 .. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
    :width: 6.50000in
    :height: 3.16667in
+.. |image8| image:: ./media/media/TESagents.png
+   :width: 6.50000in
+   :height: 3.16667in
+   
+   
