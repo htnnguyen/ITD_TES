@@ -114,7 +114,6 @@ The folder Matlab and Python files contain some expamples how to modify the Grid
 Run file: run_540_class.bat to get the simulation results.
 
 List of TES agents and TES designs that we support:
-==================================
 
 1. HVAC
 
@@ -126,21 +125,32 @@ List of TES agents and TES designs that we support:
 
 5. ISO-NE wholesale market
 
-The libary of TESAgents are implemented in TESAgent.py
---------------------------------------
 The file TESAgent.py inlcudes 4 Classes that are shown in Figure 8:
 
-1. HVAC
+1. Class HVAC
 
-2. Waterheater
+2. Class Waterheater
 
-3. Refrigerator
+3. Class Refrigerator
 
-4. LISA (Local Intelligent Software Agent). LISA represents the Home Energy Management System.
+4. Class LISA (Local Intelligent Software Agent). LISA represents the Home Energy Management System.
 
 |image8|
 
 Figure 8. Overview of TESagents.py
+
+The simulation setting can be configured by modifying the Initialization.py (Figure. 9)
+
+|image9|
+
+Figure 9. Overview of Initialization.py
+
+
+Outcome of the Simulation with water heaters and HVACs of 540 houses over 8 days is depicted in Figure 10:
+
+|image10|
+
+Figure 10. Simulation Results
 
 .. |logo| image:: ./media/media/ISU_logo.png
    :width: 2.0in
@@ -172,5 +182,7 @@ Figure 8. Overview of TESagents.py
 .. |image8| image:: ./media/TESagent.png
    :width: 6.50000in
    :height: 3.16667in
-   
+ .. |image9| image:: ./media/result.png
+   :width: 6.50000in
+   :height: 3.16667in  
    
