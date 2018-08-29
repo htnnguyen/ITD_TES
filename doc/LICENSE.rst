@@ -1,5 +1,5 @@
 ============
-ITD TES System License
+ITD TES System Open Source License
 ============
 BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
 
