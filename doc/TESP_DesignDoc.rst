@@ -133,21 +133,23 @@ List of TES agents and TES designs that we support:
    :width: 6.50000in
    :height: 3.16667in
 .. |image3| image:: ./media/media/ITDTestSystemV3AgentHierarchy.png
-   :width: 6.00000in
-   :height: 5.16667in
+   :width: 6.50000in
+   :height: 3.16667in
 .. |image4| image:: ./media/media/DAMRTMTimingAMESV3.png
-   :width: 6.00000in
-   :height: 3.75000in
+   :width: 6.50000in
+   :height: 3.16667in
 .. |image1| image:: ./media/media/ITDTestSystemSchematic.png
-   :width: 6.16667in
-   :height: 3.33333in
+   :width: 6.50000in
+   :height: 3.16667in
 .. |image5| image:: ./media/media/ITDTestSystemV3Components.png
-   :width: 5.75000in
-   :height: 2.83333in
+   :width: 6.50000in
+   :height: 3.16667in
 .. |image6| image:: ./media/media/IEEE13BusGrid.png
-   :width: 6.00000in
-   :height: 6.33333in
+   :width: 6.50000in
+   :height: 3.16667in
 .. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
-   :width: 6.00000in
-   :height: 5.75000in
-
+   :width: 6.50000in
+   :height: 3.16667in
+.. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
+   :width: 6.50000in
+   :height: 3.16667in
