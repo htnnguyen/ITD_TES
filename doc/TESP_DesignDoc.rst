@@ -135,8 +135,7 @@ participating as LSE 4 at transmission bus 3.
 Using and Customizing the ITD_TES
 ==============================
 
-TESP runs on Microsoft Windows. The readers need to install AMES V3.2, GridLAB-D, and Framework of Network Cosimulation (FNCS).
-The folder Matlab and Python files contain some expamples how to modify the GridlabD glm files to custumize the number of houses and appliances, automatically generate yaml files to communicatate data via TCP/IP 5570 (done via FNCS).
+TESP runs on Microsoft Windows. The reader needs to install AMES V3.2, GridLAB-D, and the Framework for Network Co-Simulation (FNCS).The folder "Matlab and Python Files" contains some examples for how to modify the GridlabD glm files to customize the number of houses and appliances, and how to automatically generate yaml files to communicate data via TCP/IP 5570 (done via FNCS).
 
 Run file: run_540_class.bat to get the simulation results.
 
@@ -152,7 +151,7 @@ List of TES agents and TES designs that we support:
 
 5. ISO-NE wholesale market
 
-The file TESAgent.py inlcudes 4 Classes that are shown in Figure 8:
+The file TESAgent.py includes four classes that are shown in Figure 8:
 
 1. Class HVAC
 
@@ -166,14 +165,14 @@ The file TESAgent.py inlcudes 4 Classes that are shown in Figure 8:
 
 Figure 8. Overview of TESagents.py
 
-The simulation setting can be configured by modifying the Initialization.py (Figure. 9)
+The simulation setting can be configured by modifying Initialization.py (Figure. 9)
 
 |image9|
 
 Figure 9. Overview of Initialization.py
 
 
-Outcome of the Simulation with water heaters and HVACs of 540 houses over 8 days is depicted in Figure 10:
+Outcome of the simulation with water heaters and HVACs for 540 houses over 8 days is depicted in Figure 10:
 
 |image10|
 
