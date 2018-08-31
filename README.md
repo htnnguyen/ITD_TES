@@ -1,6 +1,10 @@
 # ISU_PNNL-TESP
 This is the repository of ISU-PNNL project.
 
+The complete version 1.0 of the ITD TES System is located in the zipped file: ITD_TES_version_1.0
+
+We also provided the Preliminary_ITD_Test_System_Work that includes the following folders and zipped files:
+
 The "Matlab and Python Files" Folder has 2 files:
       1) IEEE13_glm_writer.m creates 180 houses adding to the IEEE13 test system. The topology checking can be done in this file
       2) The price_generator.py generate price.txt with dynamic pricing signal for 48h with 1 min interval.
