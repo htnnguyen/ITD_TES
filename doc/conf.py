@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'PNNL/Iowa State University: Transactive Energy System Project'
-copyright = 'Iowa State University'
+# copyright = 'Iowa State University'
 author = 'Hieu Trung Nguyen, Swathi Battula, Rohit Reddy Takkala, Zhaoyu Wang, Leigh Tesfatsion'
 
 # The version info for the project you're documenting, acts as replacement for
