@@ -114,7 +114,7 @@ control methods
 
 |image5|
 
-Figure 5. Key software components for the ITD TES System
+Figure 5. Key software components for the ITD TES System fefjawhfjashfjahsjfhasjfh
 
 ITD Test Cases
 --------------------------------------
