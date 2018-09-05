@@ -3,7 +3,7 @@
 ..
 Abstract
 ======================================
-This is the documentation of the ITD TES System code repository https://github.com/htnnguyen/ITD_TES
+This is the documentation for the ITD TES System code repository https://github.com/htnnguyen/ITD_TES
 
 Key Links
 ======================================
@@ -60,8 +60,7 @@ of five critical challenges, as follows:
 1. The validation of ITD TES designs prior to real-world implementation requires an ITD test system permitting the high-fidelity modeling and simulation of physical attributes, institutional arrangements, and
 decision-maker behaviors and methods.
 
-2. This ITD test system should model ITD systems as open-ended dynamic systems in order to permit performance evaluation for proposed
-TES designs over successive days of operation.
+2. This ITD test system should model ITD systems as open-ended dynamic systems in order to permit performance evaluation for proposed TES designs over successive days of operation.
 
 3. This ITD test system should permit careful modeling of linkages between transmission and distribution systems.
 
@@ -112,6 +111,7 @@ control methods
 
 4. TCP/IP middleware to handle communication among C1-C3, implemented by FNCS.
 
+
 |image5|
 
 Figure 5. Key software components for the ITD TES System
@@ -119,8 +119,7 @@ Figure 5. Key software components for the ITD TES System
 ITD Test Cases
 --------------------------------------
 
-Each ITD test case models a DSO-managed distribution system linked to an ISO-managed transmission system. Distribution system transactions are conducted in accordance with a PowerMatcher TES design, and transmission system transactions are conducted in accordance with a two-settlement system consisting of daily ISO-managed DAM and RTM operations with grid congestion handled by LMP.
-As depicted in Figure 6, the distribution system consists of a 13-bus distribution grid populated with households dispersed across 15 bus loads. Each household has two basic types of appliances: (i) conventional (non-priceresponsive) load; and (ii) an HVAC system locally managed by a smart price-responsive controller with bang-bang (ON/OFF) control settings. As
+Each ITD test case models a DSO-managed distribution system linked to an ISO-managed transmission system. Distribution system transactions are conducted in accordance with a PowerMatcher TES design, and transmission system transactions are conducted in accordance with a two-settlement system consisting of daily ISO-managed DAM and RTM operations with grid congestion handled by LMP.  As depicted in Figure 6, the distribution system consists of a 13-bus distribution grid populated with households dispersed across 15 bus loads. Each household has two basic types of appliances: (i) conventional (non-priceresponsive) load; and (ii) an HVAC system locally managed by a smart price-responsive controller with bang-bang (ON/OFF) control settings. As
 depicted in Figure 7, the transmission system consists of a 5-bus transmission grid populated by five GenCos, three regular LSEs 1-3, and the DSO functioning as an additional LSE 4 at transmission bus 3.
 
 |image6|
@@ -176,7 +175,7 @@ The outcome of a simulation with water heaters and HVACs for 540 houses over 8 s
 
 |image10|
 
-Figure 10. Simulation Results
+Figure 10. Simulation results
 
 .. |logo| image:: ./media/media/ISU_logo.png
    :width: 2.0in
