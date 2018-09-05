@@ -57,20 +57,15 @@ entire electrical infrastructure via value-based transactions. Interest in TES d
 systems can induce tight two-way linkages between transmission and distribution level operations through market processes, two-way data and signal flows, and two-way power flows. The dynamics of ITD systems operating under TES designs thus tend to be extremely complex. The difficulties facing ITD TES designers can be summarized in the form
 of five critical challenges, as follows:
 
-- 1. The validation of ITD TES designs prior to real-world implementation requires an ITD test system permitting the high-fidelity modeling and simulation of physical attributes, institutional arrangements, and
-decision-maker behaviors and methods.
+1. The validation of ITD TES designs prior to real-world implementation requires an ITD test system permitting the high-fidelity modeling and simulation of physical attributes, institutional arrangements, and decision-maker behaviors and methods.
 
-- 2. This ITD test system should model ITD systems as open-ended dynamic systems in order to permit performance evaluation for proposed TES designs over successive days of operation.
+2. This ITD test system should model ITD systems as open-ended dynamic systems in order to permit performance evaluation for proposed TES designs over successive days of operation.
 
-- 3. This ITD test system should permit careful modeling of linkages between transmission and distribution systems.
+3. This ITD test system should permit careful modeling of linkages between transmission and distribution systems.
 
-- 4. This ITD test system should permit careful evaluation of the physical
-viability of grid operations and the economic viability of all participants
-taking their local objectives and constraints into account.
+4. This ITD test system should permit careful evaluation of the physical viability of grid operations and the economic viability of all participants taking their local objectives and constraints into account.
 
-- 5. This ITD test system should easily scale to permit consideration of
-TES designs for the procurement of power and ancillary services from
-DERs as the number and diversity of these DERs continues to increase
+5. This ITD test system should easily scale to permit consideration of TES designs for the procurement of power and ancillary services from DERs as the number and diversity of these DERs continues to increase
 
 The ITD TES System developed and implemented in this work is an agent-based platform that permits each of the above five challenges to be carefully addressed.
 
