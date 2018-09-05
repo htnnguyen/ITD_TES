@@ -58,15 +58,11 @@ systems can induce tight two-way linkages between transmission and distribution 
 
 1. The validation of ITD TES designs prior to real-world implementation requires an ITD test system permitting the high-fidelity modeling and simulation of physical attributes, institutional arrangements, and decision-maker behaviors and methods.
 
-
 2. This ITD test system should model ITD systems as open-ended dynamic systems in order to permit performance evaluation for proposed TES designs over successive days of operation.
-
 
 3. This ITD test system should permit careful modeling of linkages between transmission and distribution systems.
 
-
 4. This ITD test system should permit careful evaluation of the physical viability of grid operations and the economic viability of all participants taking their local objectives and constraints into account.
-
 
 5. This ITD test system should easily scale to permit consideration of TES designs for the procurement of power and ancillary services from DERs as the number and diversity of these DERs continues to increase
 
@@ -100,12 +96,9 @@ the ITD TES System are as follows:
 
 1. A transmission system, implemented by the AMES Wholesale Power Market Test Bed;
 
-
 2. A distribution system, implemented by GridLAB-D  and by plug-in resident, appliance, and controller agents implemented in Python;
 
-
 3. A DSO agent, implemented in Python, with both economic and control methods
-
 
 4. TCP/IP middleware to handle communication among C1-C3, implemented by FNCS.
 
