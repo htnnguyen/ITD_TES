@@ -94,14 +94,11 @@ Key Software Components
 As depicted in Figure 5, the four principal software components comprising
 the ITD TES System are as follows:
 
-1. A transmission system, implemented by the AMES Wholesale
-Power Market Test Bed;
+1. A transmission system, implemented by the AMES Wholesale Power Market Test Bed;
 
-2. A distribution system, implemented by GridLAB-D  and by
-plug-in resident, appliance, and controller agents implemented in Python;
+2. A distribution system, implemented by GridLAB-D  and by plug-in resident, appliance, and controller agents implemented in Python;
 
-3. A DSO agent, implemented in Python, with both economic and
-control methods
+3. A DSO agent, implemented in Python, with both economic and control methods
 
 4. TCP/IP middleware to handle communication among C1-C3, implemented by FNCS.
 
