@@ -2,7 +2,7 @@
    :format: html latex
 ..
 Abstract
-======================================+
+======================================
 This is the documentation of the ITD TES System code repository https://github.com/htnnguyen/ITD_TES
 
 Key Links
@@ -136,7 +136,7 @@ Using and Customizing the ITD_TES
 ==============================
 
 TESP runs on Microsoft Windows. The readers need to install AMES V3.2, GridLAB-D, and Framework of Network Cosimulation (FNCS).
-The folder Matlab and Python files contain some expamples how to modify the GridlabD glm files to custumize the number of houses and appliances, automatically generate yaml files to communicatate data via TCP/IP 5570 (done via FNCS).
+The folder Matlab and Python files contain some expamples how to modify the GridlabD glm files to custumize the number of houses and appliances, automatically generate yaml files to communicate data via TCP/IP 5570 (done via FNCS).
 
 Run file: run_540_class.bat to get the simulation results.
 
