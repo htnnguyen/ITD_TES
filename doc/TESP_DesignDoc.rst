@@ -88,11 +88,11 @@ wholesale power market operations and the two-way feedback between transmission 
 
 |image3|
 
-Figure 3. Partial agent hierarchy for the ITD TES System.
+Figure 3. Flow diagram for ITD Test System depicting two-way feedback between transmission and distribution levels.
 
 |image4|
 
-Figure 4. Partial agent hierarchy for the ITD TES System.
+Figure 4. Daily operation of day-ahead and real-time markets in ITD Test System, implemented via AMES (v3.2). 
 
 
 Key Software Components
@@ -182,10 +182,10 @@ Figure 10. Simulation Results
 .. |logo| image:: ./media/media/ISU_logo.png
    :width: 2.0in
    :height: 2.0in
-.. |image2| image:: ./media/media/ITDTestCaseFeedbackLoop.png
+.. |image2| image:: ./media/media/ITDTestSystemV3AgentHierarchy.png
    :width: 6.50000in
    :height: 3.16667in
-.. |image3| image:: ./media/media/ITDTestSystemV3AgentHierarchy.png
+.. |image3| image:: ./media/media/ITDTestCaseFeedbackLoop.png
    :width: 6.50000in
    :height: 3.16667in
 .. |image4| image:: ./media/media/DAMRTMTimingAMESV3.png
