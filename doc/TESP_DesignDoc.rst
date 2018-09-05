@@ -197,10 +197,10 @@ Figure 10. Simulation Results
 .. |image5| image:: ./media/media/ITDTestSystemV3Components.png
    :width: 6.50000in
    :height: 3.16667in
-.. |image6| image:: ./media/media/IEEE13BusGrid.png
+.. |image6| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png 
    :width: 6.50000in
    :height: 3.16667in
-.. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
+.. |image7| image:: ./media/media/IEEE13BusGrid.png
    :width: 6.50000in
    :height: 3.16667in
 .. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
