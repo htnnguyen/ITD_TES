@@ -114,7 +114,7 @@ control methods
 
 |image5|
 
-Figure 5. Key software components for the ITD TES System fefjawhfjashfjahsjfhasjfh
+Figure 5. Key software components for the ITD TES System
 
 ITD Test Cases
 --------------------------------------
@@ -200,10 +200,10 @@ Figure 10. Simulation Results
 .. |image6| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png 
    :width: 6.50000in
    :height: 3.16667in
-.. |image7| image:: ./media/media/IEEE13BusGrid.png
+.. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png 
    :width: 6.50000in
    :height: 3.16667in
-.. |image7| image:: ./media/media/ITDTestCaseFiveBusGridLSE4.png
+.. |image7| image:: ./media/media/IEEE13BusGrid.png
    :width: 6.50000in
    :height: 3.16667in
 .. |image8| image:: ./media/TESagent.png
