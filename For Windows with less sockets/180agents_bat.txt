@@ -1,0 +1,30 @@
+set FNCS_CONFIG_FILE=feeder_1.yaml
+start /b cmd /c python feeder_controller.py feeder_1 ^>feeder_controller1.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_2.yaml
+start /b cmd /c python feeder_controller.py feeder_2 ^>feeder_controller2.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_3.yaml
+start /b cmd /c python feeder_controller.py feeder_3 ^>feeder_controller3.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_4.yaml
+start /b cmd /c python feeder_controller.py feeder_4 ^>feeder_controller4.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_5.yaml
+start /b cmd /c python feeder_controller.py feeder_5 ^>feeder_controller5.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_6.yaml
+start /b cmd /c python feeder_controller.py feeder_6 ^>feeder_controller6.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_7.yaml
+start /b cmd /c python feeder_controller.py feeder_7 ^>feeder_controller7.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_8.yaml
+start /b cmd /c python feeder_controller.py feeder_8 ^>feeder_controller8.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_9.yaml
+start /b cmd /c python feeder_controller.py feeder_9 ^>feeder_controller9.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_10.yaml
+start /b cmd /c python feeder_controller.py feeder_10 ^>feeder_controller10.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_11.yaml
+start /b cmd /c python feeder_controller.py feeder_11 ^>feeder_controller11.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_12.yaml
+start /b cmd /c python feeder_controller.py feeder_12 ^>feeder_controller12.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_13.yaml
+start /b cmd /c python feeder_controller.py feeder_13 ^>feeder_controller13.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_14.yaml
+start /b cmd /c python feeder_controller.py feeder_14 ^>feeder_controller14.log 2^>^&1
+set FNCS_CONFIG_FILE=feeder_15.yaml
+start /b cmd /c python feeder_controller.py feeder_15 ^>feeder_controller15.log 2^>^&1
