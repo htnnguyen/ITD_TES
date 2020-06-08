@@ -22,9 +22,9 @@ The "Version 1" folder contains a direct load control example for which differen
 
 The "Version 2" folder contains a price-based control example for which different houses are represented by different processes (house_controller.py +houseID) using a PowerMatcher framework. Instead of direct load control signals, the DSO sends price signals which can adjust the number of HVACs turning on/off. The price signals are determined by considering the aggregated bids of all HVACs.
 
-Note: You need to install fncs, GridlabD, ..., etc before running our program by following the instruction in https://github.com/pnnl/tesp
+Note: You need to install fncs, GridlabD, ..., etc before running our program by following the instruction in https://github.com/pnnl/tesp (Note the python version should be 3.6 or 3.7)
 
-I have recorded the pnnl install file for Windows version here (just rin the file and all components, e.g., gridlabd, fncs, energy_plus, will be installed)
+I have recorded the PNNL installation file for Windows version here (just run the file and all components, e.g., gridlabd, fncs, energy_plus, will be installed)
 https://drive.google.com/drive/folders/1pPP8GCb2_33pIOIfqwahBRmu1GWFg_I0?usp=sharing
 
-Also, the number of processes connecting via fncs_broker (port5570) in Windows is limited by 2^N-2 (62=2^6-2 in my current laptop and 1022=2^10-2 in the computer I used for simulation in my paper) so you might want to limit the number of agents in your simulation based on your computer OS and hardware. 
+Also, the number of processes connecting via fncs_broker (TCP/IP port5570) in Windows is limited by 2^N-2 (62=2^6-2 in my current laptop and 1022=2^10-2 in the computer I used for simulation in my paper) so you might want to limit the number of agents in your simulation based on your computer OS and hardware. 
